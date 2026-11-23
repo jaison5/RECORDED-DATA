@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" width="860" height="470" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans TC','Noto Sans CJK TC',sans-serif"><title>三種成交方式的累積報酬</title><rect width="100%" height="100%" fill="#FFFFFF"/><text x="24.0" y="30.0" font-size="16" fill="#1F1F1F" text-anchor="start" font-weight="bold">同一個訊號、三種成交方式的累積報酬（10-21～11-20）</text>
+<text x="24.0" y="50.0" font-size="12" fill="#5C5C5C" text-anchor="start" font-weight="normal">收盤前帳戶 10-21 錯過、10-22 收盤才進場，避開了 10-22 的 −2.86%，所以全期看起來比較好</text>
+<line x1="262.0" y1="80.0" x2="262.0" y2="410.0" stroke="#E6E6E6" stroke-width="1"/>
+<text x="262.0" y="426.0" font-size="11" fill="#5C5C5C" text-anchor="middle" font-weight="normal">−15%</text>
+<line x1="424.7" y1="80.0" x2="424.7" y2="410.0" stroke="#E6E6E6" stroke-width="1"/>
+<text x="424.7" y="426.0" font-size="11" fill="#5C5C5C" text-anchor="middle" font-weight="normal">−10%</text>
+<line x1="587.3" y1="80.0" x2="587.3" y2="410.0" stroke="#E6E6E6" stroke-width="1"/>
+<text x="587.3" y="426.0" font-size="11" fill="#5C5C5C" text-anchor="middle" font-weight="normal">−5%</text>
+<line x1="750.0" y1="80.0" x2="750.0" y2="410.0" stroke="#BDBDBD" stroke-width="1"/>
+<text x="750.0" y="426.0" font-size="11" fill="#5C5C5C" text-anchor="middle" font-weight="normal">−0%</text>
+<text x="180.0" y="121.0" font-size="13" fill="#1F1F1F" text-anchor="end" font-weight="bold">E2E-QLSTM</text>
+<rect x="519.3" y="88.0" width="230.7" height="16" rx="3" fill="#5C5C5C"><title>E2E-QLSTM／模型（收盤價成交）：-7.09%</title></rect>
+<text x="525.3" y="101.0" font-size="11" fill="#FFFFFF" text-anchor="start" font-weight="normal">−7.1%</text>
+<rect x="513.5" y="106.0" width="236.5" height="16" rx="3" fill="#0072B2"><title>E2E-QLSTM／券商：隔日開盤：-7.27%</title></rect>
+<text x="519.5" y="119.0" font-size="11" fill="#FFFFFF" text-anchor="start" font-weight="normal">−7.3%</text>
+<rect x="550.2" y="124.0" width="199.8" height="16" rx="3" fill="#56B4E9"><title>E2E-QLSTM／券商：收盤前 5 分鐘：-6.14%</title></rect>
+<text x="556.2" y="137.0" font-size="11" fill="#1F1F1F" text-anchor="start" font-weight="normal">−6.1%</text>
+<text x="180.0" y="191.0" font-size="13" fill="#1F1F1F" text-anchor="end" font-weight="bold">QVT-QLSTM</text>
+<rect x="311.0" y="158.0" width="439.0" height="16" rx="3" fill="#5C5C5C"><title>QVT-QLSTM／模型（收盤價成交）：-13.50%</title></rect>
+<text x="317.0" y="171.0" font-size="11" fill="#FFFFFF" text-anchor="start" font-weight="normal">−13.5%</text>
+<rect x="304.8" y="176.0" width="445.2" height="16" rx="3" fill="#0072B2"><title>QVT-QLSTM／券商：隔日開盤：-13.68%</title></rect>
+<text x="310.8" y="189.0" font-size="11" fill="#FFFFFF" text-anchor="start" font-weight="normal">−13.7%</text>
+<rect x="371.6" y="194.0" width="378.4" height="16" rx="3" fill="#56B4E9"><title>QVT-QLSTM／券商：收盤前 5 分鐘：-11.63%</title></rect>
+<text x="377.6" y="207.0" font-size="11" fill="#1F1F1F" text-anchor="start" font-weight="normal">−11.6%</text>
+<text x="180.0" y="261.0" font-size="13" fill="#1F1F1F" text-anchor="end" font-weight="bold">QVT-QFWP</text>
+<rect x="297.1" y="228.0" width="452.9" height="16" rx="3" fill="#5C5C5C"><title>QVT-QFWP／模型（收盤價成交）：-13.92%</title></rect>
+<text x="303.1" y="241.0" font-size="11" fill="#FFFFFF" text-anchor="start" font-weight="normal">−13.9%</text>
+<rect x="305.4" y="246.0" width="444.6" height="16" rx="3" fill="#0072B2"><title>QVT-QFWP／券商：隔日開盤：-13.67%</title></rect>
+<text x="311.4" y="259.0" font-size="11" fill="#FFFFFF" text-anchor="start" font-weight="normal">−13.7%</text>
+<rect x="358.0" y="264.0" width="392.0" height="16" rx="3" fill="#56B4E9"><title>QVT-QFWP／券商：收盤前 5 分鐘：-12.05%</title></rect>
+<text x="364.0" y="277.0" font-size="11" fill="#1F1F1F" text-anchor="start" font-weight="normal">−12.1%</text>
+<text x="180.0" y="331.0" font-size="13" fill="#1F1F1F" text-anchor="end" font-weight="bold">VT-20d</text>
+<rect x="369.5" y="298.0" width="380.5" height="16" rx="3" fill="#5C5C5C"><title>VT-20d／模型（收盤價成交）：-11.70%</title></rect>
+<text x="375.5" y="311.0" font-size="11" fill="#FFFFFF" text-anchor="start" font-weight="normal">−11.7%</text>
+<rect x="361.9" y="316.0" width="388.1" height="16" rx="3" fill="#0072B2"><title>VT-20d／券商：隔日開盤：-11.93%</title></rect>
+<text x="367.9" y="329.0" font-size="11" fill="#FFFFFF" text-anchor="start" font-weight="normal">−11.9%</text>
+<rect x="432.3" y="334.0" width="317.7" height="16" rx="3" fill="#56B4E9"><title>VT-20d／券商：收盤前 5 分鐘：-9.76%</title></rect>
+<text x="438.3" y="347.0" font-size="11" fill="#1F1F1F" text-anchor="start" font-weight="normal">−9.8%</text>
+<line x1="255.1" y1="80.0" x2="255.1" y2="410.0" stroke="#1F1F1F" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="259.1" y="90.0" font-size="11" fill="#5C5C5C" text-anchor="start" font-weight="normal">QQQ −15.2%</text>
+<line x1="422.0" y1="80.0" x2="422.0" y2="410.0" stroke="#5C5C5C" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="426.0" y="90.0" font-size="11" fill="#5C5C5C" text-anchor="start" font-weight="normal">VOO −10.1%</text>
+<rect x="190" y="436" width="12" height="12" rx="2" fill="#5C5C5C"/>
+<text x="207.0" y="446.0" font-size="12" fill="#1F1F1F" text-anchor="start" font-weight="normal">模型（收盤價成交）</text>
+<rect x="365" y="436" width="12" height="12" rx="2" fill="#0072B2"/>
+<text x="382.0" y="446.0" font-size="12" fill="#1F1F1F" text-anchor="start" font-weight="normal">券商：隔日開盤</text>
+<rect x="540" y="436" width="12" height="12" rx="2" fill="#56B4E9"/>
+<text x="557.0" y="446.0" font-size="12" fill="#1F1F1F" text-anchor="start" font-weight="normal">券商：收盤前 5 分鐘</text></svg>

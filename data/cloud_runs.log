@@ -1,0 +1,1321 @@
+沒有 Alpaca 金鑰（config.env）：只記錄訊號，4 個策略都用收盤價模擬成交（同論文的回測方式）。之後加入金鑰就會改成在券商帳戶下單。
+資料到 2026-10-19 收盤；這次的單在 2026-10-20 收盤成交（紐約時間 16:00）；現在紐約 2026-10-20 13:31
+  E2E-QLSTM  目標持有 QQQ  46.9%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 17.8%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 18.3%）
+  VT-20d     目標持有 QQQ 100.0%
+資料到 2026-10-19 收盤；這次的單在 2026-10-20 收盤成交（紐約時間 16:00）；現在紐約 2026-10-20 13:44
+  E2E-QLSTM  目標持有 QQQ  46.9%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 17.8%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 18.3%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 還有未成交的單（2 張），這次不再下單
+  QVT-QLSTM: 還有未成交的單（2 張），這次不再下單
+  VT-20d: 還有未成交的單（2 張），這次不再下單
+資料到 2026-10-20 收盤；這次的單在 2026-10-21 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-20 22:39
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.1%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 18.6%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: buy 64 QQQ（市價，下一個開盤）→ accepted
+  E2E-QLSTM: buy 584 BIL（市價，下一個開盤）→ accepted
+  QVT-QLSTM: buy 138 QQQ（市價，下一個開盤）→ accepted
+  QVT-QLSTM: buy 5 BIL（市價，下一個開盤）→ accepted
+  VT-20d: buy 138 QQQ（市價，下一個開盤）→ accepted
+  VT-20d: buy 5 BIL（市價，下一個開盤）→ accepted
+資料到 2026-10-20 收盤；開盤成交的帳戶在 2026-10-21 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-20 23:45
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.1%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 18.6%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-20）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-20）已經下過單，略過
+  QVT-QFWP: buy 138 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 5 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: buy 138 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: buy 5 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-10-20 收盤；開盤成交的帳戶在 2026-10-21 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-21 00:03
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.1%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 18.6%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-20）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-20）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-20）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-20）已經下過單，略過
+資料到 2026-10-20 收盤；開盤成交的帳戶在 2026-10-21 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-21 13:55
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.1%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 18.6%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-20）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-20）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-20）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-20）已經下過單，略過
+資料到 2026-10-21 收盤；開盤成交的帳戶在 2026-10-22 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-22 01:38
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 17.8%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.4%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  E2E-QLSTM: sell 2 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 3 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 3 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: sell 3 QQQ（市價，下一個開盤）→ accepted 
+資料到 2026-10-21 收盤；開盤成交的帳戶在 2026-10-22 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-22 02:56
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 17.8%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.4%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-21）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-21）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-21）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-21）已經下過單，略過
+資料到 2026-10-21 收盤；收盤前下單的帳戶在 2026-10-22 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-10-22 15:40
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 17.8%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.4%）
+  VT-20d     目標持有 QQQ 100.0%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: buy 137 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 1 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 64 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 579 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 137 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 1 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: buy 137 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 1 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 137 QQQ → filled filled 137 @ 704.670584 at 2026-10-22T19:55:10.921340071Z
+  QVT-QLSTM-close: buy 1 BIL → filled filled 1 @ 91.61 at 2026-10-22T19:55:07.892863521Z
+  E2E-QLSTM-close: buy 64 QQQ → filled filled 64 @ 704.406563 at 2026-10-22T19:55:13.000895667Z
+  E2E-QLSTM-close: buy 579 BIL → filled filled 579 @ 91.61 at 2026-10-22T19:55:14.844488107Z
+  QVT-QFWP-close: buy 137 QQQ → filled filled 137 @ 704.400511 at 2026-10-22T19:55:15.760037811Z
+  QVT-QFWP-close: buy 1 BIL → filled filled 1 @ 91.61 at 2026-10-22T19:55:15.022771954Z
+  VT-20d-close: buy 137 QQQ → filled filled 137 @ 704.461752 at 2026-10-22T19:55:18.029122384Z
+  VT-20d-close: buy 1 BIL → filled filled 1 @ 91.61 at 2026-10-22T19:55:18.26046266Z
+資料到 2026-10-22 收盤；開盤成交的帳戶在 2026-10-23 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-22 18:00
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 19.3%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 19.3%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: sell 9 BIL（市價，下一個開盤）→ accepted 
+  E2E-QLSTM: buy 2 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 2 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 2 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: sell 1 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: buy 2 QQQ（市價，下一個開盤）→ accepted 
+資料到 2026-10-21 收盤；開盤成交的帳戶在 2026-10-22 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-22 20:48
+太晚了：這個訊號對應的收盤已過或即將截止，這次不下單（依 PROTOCOL.md 記為錯過）。等紐約 17:00 後資料更新再跑。
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 17.8%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.4%）
+  VT-20d     目標持有 QQQ 100.0%
+資料到 2026-10-22 收盤；開盤成交的帳戶在 2026-10-23 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-23 02:13
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 19.3%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 19.3%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-22）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-22）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-22）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-22）已經下過單，略過
+資料到 2026-10-22 收盤；開盤成交的帳戶在 2026-10-23 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-23 06:17
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 19.3%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 19.3%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-22）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-22）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-22）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-22）已經下過單，略過
+資料到 2026-10-22 收盤；收盤前下單的帳戶在 2026-10-23 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-10-23 15:41
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 19.3%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 19.3%）
+  VT-20d     目標持有 QQQ 100.0%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: buy 4 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 1 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 2 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 4 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 4 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 4 QQQ → filled filled 4 @ 704.19 at 2026-10-23T19:55:06.827411895Z
+  E2E-QLSTM-close: sell 1 BIL → filled filled 1 @ 91.63 at 2026-10-23T19:55:09.757814873Z
+  E2E-QLSTM-close: buy 2 QQQ → filled filled 2 @ 704.255 at 2026-10-23T19:55:10.415764542Z
+  QVT-QFWP-close: buy 4 QQQ → filled filled 4 @ 704.25 at 2026-10-23T19:55:12.356225198Z
+  VT-20d-close: buy 4 QQQ → filled filled 4 @ 704.2 at 2026-10-23T19:55:14.891288073Z
+資料到 2026-10-23 收盤；開盤成交的帳戶在 2026-10-26 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-23 18:00
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.5%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.5%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: buy 1 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 2 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 2 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: buy 2 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-10-22 收盤；開盤成交的帳戶在 2026-10-23 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-23 20:55
+太晚了：這個訊號對應的收盤已過或即將截止，這次不下單（依 PROTOCOL.md 記為錯過）。等紐約 17:00 後資料更新再跑。
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 19.3%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 19.3%）
+  VT-20d     目標持有 QQQ 100.0%
+資料到 2026-10-23 收盤；開盤成交的帳戶在 2026-10-26 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-24 02:08
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.5%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.5%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-23）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-23）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-23）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-23）已經下過單，略過
+資料到 2026-10-23 收盤；開盤成交的帳戶在 2026-10-26 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-24 05:39
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.5%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.5%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-23）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-23）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-23）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-23）已經下過單，略過
+資料到 2026-10-23 收盤；收盤前下單的帳戶在 2026-10-26 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-10-26 15:40
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.5%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.5%）
+  VT-20d     目標持有 QQQ 100.0%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: buy 1 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 5 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 6 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 1 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 5 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: buy 1 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 5 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 1 QQQ → filled filled 1 @ 712.37 at 2026-10-26T19:55:03.069980887Z
+  QVT-QLSTM-close: buy 5 BIL → filled filled 5 @ 91.65 at 2026-10-26T19:55:04.98334934Z
+  E2E-QLSTM-close: buy 6 BIL → filled filled 6 @ 91.65 at 2026-10-26T19:55:06.980152794Z
+  QVT-QFWP-close: buy 1 QQQ → filled filled 1 @ 712.34 at 2026-10-26T19:55:09.842059786Z
+  QVT-QFWP-close: buy 5 BIL → filled filled 5 @ 91.65 at 2026-10-26T19:55:12.015469279Z
+  VT-20d-close: buy 1 QQQ → filled filled 1 @ 712.37 at 2026-10-26T19:55:10.502231338Z
+  VT-20d-close: buy 5 BIL → filled filled 5 @ 91.65 at 2026-10-26T19:55:13.241352494Z
+資料到 2026-10-26 收盤；開盤成交的帳戶在 2026-10-27 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-26 18:00
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.3%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.3%）
+  VT-20d     目標持有 QQQ 100.0%
+  QVT-QLSTM: sell 1 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-10-26 收盤；開盤成交的帳戶在 2026-10-27 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-26 21:35
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.3%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.3%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: buy 1 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: 這個訊號（2026-10-26）已經下過單，略過
+  VT-20d: buy 1 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-10-26 收盤；開盤成交的帳戶在 2026-10-27 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-27 02:33
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.3%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.3%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-26）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-26）已經下過單，略過
+  QVT-QFWP: sell 4 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: 這個訊號（2026-10-26）已經下過單，略過
+資料到 2026-10-26 收盤；開盤成交的帳戶在 2026-10-27 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-27 06:44
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.3%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.3%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-26）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-26）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-26）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-26）已經下過單，略過
+資料到 2026-10-26 收盤；收盤前下單的帳戶在 2026-10-27 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-10-27 15:41
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.3%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.3%）
+  VT-20d     目標持有 QQQ 100.0%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: buy 1 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 1 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 6 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 1 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: sell 6 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: buy 1 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 1 BIL → filled filled 1 @ 91.66 at 2026-10-27T19:55:04.644065233Z
+  E2E-QLSTM-close: buy 1 BIL → filled filled 1 @ 91.66 at 2026-10-27T19:55:06.508608228Z
+  QVT-QFWP-close: sell 6 BIL → filled filled 6 @ 91.65 at 2026-10-27T19:55:10.299838984Z
+  QVT-QFWP-close: buy 1 QQQ → filled filled 1 @ 721.31 at 2026-10-27T19:55:09.275561616Z
+  VT-20d-close: sell 6 BIL → filled filled 6 @ 91.65 at 2026-10-27T19:55:12.044451787Z
+  VT-20d-close: buy 1 QQQ → filled filled 1 @ 721.32 at 2026-10-27T19:55:09.533117305Z
+資料到 2026-10-27 收盤；開盤成交的帳戶在 2026-10-28 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-27 18:01
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.2%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 16.7%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  E2E-QLSTM: buy 6 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 1 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 2 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: sell 2 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-10-26 收盤；開盤成交的帳戶在 2026-10-27 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-27 21:32
+太晚了：這個訊號對應的收盤已過或即將截止，這次不下單（依 PROTOCOL.md 記為錯過）。等紐約 17:00 後資料更新再跑。
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.3%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 17.3%）
+  VT-20d     目標持有 QQQ 100.0%
+資料到 2026-10-27 收盤；開盤成交的帳戶在 2026-10-28 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-28 03:02
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.2%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 16.7%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-27）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-27）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-27）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-27）已經下過單，略過
+資料到 2026-10-27 收盤；開盤成交的帳戶在 2026-10-28 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-28 07:28
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.2%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 16.7%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-27）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-27）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-27）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-27）已經下過單，略過
+資料到 2026-10-27 收盤；收盤前下單的帳戶在 2026-10-28 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-10-28 15:40
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.2%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 16.7%）
+  VT-20d     目標持有 QQQ 100.0%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 1 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 1 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 1 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 3 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 2 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 6 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: sell 2 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 6 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 1 QQQ → filled filled 1 @ 724.38 at 2026-10-28T19:55:06.428680308Z
+  QVT-QLSTM-close: sell 1 BIL → filled filled 1 @ 91.66 at 2026-10-28T19:55:07.317647695Z
+  E2E-QLSTM-close: sell 1 QQQ → filled filled 1 @ 724.38 at 2026-10-28T19:55:11.012993915Z
+  E2E-QLSTM-close: buy 3 BIL → filled filled 3 @ 91.67 at 2026-10-28T19:55:12.012918298Z
+  QVT-QFWP-close: sell 2 QQQ → filled filled 2 @ 724.33 at 2026-10-28T19:55:14.447185845Z
+  QVT-QFWP-close: buy 6 BIL → filled filled 6 @ 91.67 at 2026-10-28T19:55:15.616900089Z
+  VT-20d-close: sell 2 QQQ → filled filled 2 @ 724.56 at 2026-10-28T19:55:16.860058754Z
+  VT-20d-close: buy 6 BIL → filled filled 6 @ 91.67 at 2026-10-28T19:55:18.645974146Z
+資料到 2026-10-28 收盤；開盤成交的帳戶在 2026-10-29 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-28 18:01
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.1%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 16.7%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: sell 3 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 1 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: sell 1 QQQ（市價，下一個開盤）→ accepted 
+資料到 2026-10-28 收盤；開盤成交的帳戶在 2026-10-29 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-28 21:54
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.1%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 16.7%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-28）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-28）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-28）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-28）已經下過單，略過
+資料到 2026-10-28 收盤；開盤成交的帳戶在 2026-10-29 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-29 03:24
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.1%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 16.7%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-28）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-28）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-28）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-28）已經下過單，略過
+資料到 2026-10-28 收盤；開盤成交的帳戶在 2026-10-29 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-29 07:39
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.1%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 16.7%）
+  VT-20d     目標持有 QQQ 100.0%
+  E2E-QLSTM: 這個訊號（2026-10-28）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-28）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-28）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-28）已經下過單，略過
+資料到 2026-10-28 收盤；收盤前下單的帳戶在 2026-10-29 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-10-29 15:41
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 18.1%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 16.7%）
+  VT-20d     目標持有 QQQ 100.0%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 2 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 6 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 1 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 2 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 2 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 5 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: sell 2 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: sell 5 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 2 QQQ → filled filled 2 @ 714.685 at 2026-10-29T19:55:07.663818434Z
+  QVT-QLSTM-close: sell 6 BIL → filled filled 6 @ 91.67 at 2026-10-29T19:55:10.922386056Z
+  E2E-QLSTM-close: sell 1 QQQ → filled filled 1 @ 714.64 at 2026-10-29T19:55:13.823909186Z
+  E2E-QLSTM-close: sell 2 BIL → filled filled 2 @ 91.67 at 2026-10-29T19:55:15.231226116Z
+  QVT-QFWP-close: sell 2 QQQ → filled filled 2 @ 714.63 at 2026-10-29T19:55:16.195510733Z
+  QVT-QFWP-close: sell 5 BIL → filled filled 5 @ 91.67 at 2026-10-29T19:55:17.982665543Z
+  VT-20d-close: sell 2 QQQ → filled filled 2 @ 714.58 at 2026-10-29T19:55:20.231330843Z
+  VT-20d-close: sell 5 BIL → filled filled 5 @ 91.67 at 2026-10-29T19:55:21.417905406Z
+資料到 2026-10-29 收盤；開盤成交的帳戶在 2026-10-30 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-29 18:01
+  E2E-QLSTM  目標持有 QQQ  46.9%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 16.9%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 15.6%）
+  VT-20d     目標持有 QQQ  99.9%
+  E2E-QLSTM: sell 4 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: sell 1 QQQ（市價，下一個開盤）→ accepted 
+資料到 2026-10-29 收盤；開盤成交的帳戶在 2026-10-30 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-29 22:05
+  E2E-QLSTM  目標持有 QQQ  46.9%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 16.9%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 15.6%）
+  VT-20d     目標持有 QQQ  99.9%
+  E2E-QLSTM: 這個訊號（2026-10-29）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-29）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-29）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-29）已經下過單，略過
+資料到 2026-10-29 收盤；開盤成交的帳戶在 2026-10-30 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-30 03:27
+  E2E-QLSTM  目標持有 QQQ  46.9%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 16.9%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 15.6%）
+  VT-20d     目標持有 QQQ  99.9%
+  E2E-QLSTM: 這個訊號（2026-10-29）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-29）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-29）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-29）已經下過單，略過
+資料到 2026-10-29 收盤；開盤成交的帳戶在 2026-10-30 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-30 07:29
+  E2E-QLSTM  目標持有 QQQ  46.9%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 16.9%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 15.6%）
+  VT-20d     目標持有 QQQ  99.9%
+  E2E-QLSTM: 這個訊號（2026-10-29）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-29）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-29）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-29）已經下過單，略過
+資料到 2026-10-29 收盤；收盤前下單的帳戶在 2026-10-30 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-10-30 15:41
+  E2E-QLSTM  目標持有 QQQ  46.9%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 16.9%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 15.6%）
+  VT-20d     目標持有 QQQ  99.9%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 3 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 4 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 9 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 3 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 3 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: sell 3 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 3 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 3 QQQ → filled filled 3 @ 690.74 at 2026-10-30T19:55:13.704214467Z
+  QVT-QLSTM-close: buy 4 BIL → filled filled 4 @ 91.71 at 2026-10-30T19:55:15.260393987Z
+  E2E-QLSTM-close: sell 9 BIL → filled filled 9 @ 91.7 at 2026-10-30T19:55:19.185463832Z
+  QVT-QFWP-close: sell 3 QQQ → filled filled 3 @ 690.78 at 2026-10-30T19:55:21.235404645Z
+  QVT-QFWP-close: buy 3 BIL → filled filled 3 @ 91.71 at 2026-10-30T19:55:25.960001008Z
+  VT-20d-close: sell 3 QQQ → filled filled 3 @ 690.5 at 2026-10-30T19:55:25.376566846Z
+  VT-20d-close: buy 3 BIL → filled filled 3 @ 91.71 at 2026-10-30T19:55:25.633853146Z
+資料到 2026-10-30 收盤；開盤成交的帳戶在 2026-11-02 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-30 18:00
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 19.5%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 18.7%）
+  VT-20d     目標持有 QQQ  88.3%
+  E2E-QLSTM: sell 7 BIL（市價，下一個開盤）→ accepted 
+  E2E-QLSTM: buy 2 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 2 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 1 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 2 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 1 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: sell 14 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: buy 122 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-10-30 收盤；開盤成交的帳戶在 2026-11-02 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-30 21:44
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 19.5%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 18.7%）
+  VT-20d     目標持有 QQQ  88.3%
+  E2E-QLSTM: 這個訊號（2026-10-30）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-30）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-30）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-30）已經下過單，略過
+資料到 2026-10-30 收盤；開盤成交的帳戶在 2026-11-02 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-31 03:16
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 19.5%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 18.7%）
+  VT-20d     目標持有 QQQ  88.3%
+  E2E-QLSTM: 這個訊號（2026-10-30）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-30）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-30）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-30）已經下過單，略過
+資料到 2026-10-30 收盤；開盤成交的帳戶在 2026-11-02 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-10-31 07:00
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 19.5%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 18.7%）
+  VT-20d     目標持有 QQQ  88.3%
+  E2E-QLSTM: 這個訊號（2026-10-30）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-10-30）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-10-30）已經下過單，略過
+  VT-20d: 這個訊號（2026-10-30）已經下過單，略過
+資料到 2026-10-30 收盤；收盤前下單的帳戶在 2026-11-02 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-02 15:41
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ 100.0%（σ̂ = 19.5%）
+  QVT-QFWP   目標持有 QQQ 100.0%（σ̂ = 18.7%）
+  VT-20d     目標持有 QQQ  88.3%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: buy 3 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 6 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 2 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 3 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: sell 13 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 120 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 3 QQQ → filled filled 3 @ 681.47 at 2026-11-02T20:55:09.774351255Z
+  E2E-QLSTM-close: sell 6 BIL → filled filled 6 @ 91.4 at 2026-11-02T20:55:12.22409825Z
+  E2E-QLSTM-close: buy 2 QQQ → filled filled 2 @ 681.385 at 2026-11-02T20:55:14.741641239Z
+  QVT-QFWP-close: buy 3 QQQ → filled filled 3 @ 681.553333 at 2026-11-02T20:55:15.975801996Z
+  VT-20d-close: sell 13 QQQ → filled filled 13 @ 681.375384 at 2026-11-02T20:55:20.964537308Z
+  VT-20d-close: buy 120 BIL → filled filled 120 @ 91.41 at 2026-11-02T20:55:18.369056086Z
+資料到 2026-11-02 收盤；開盤成交的帳戶在 2026-11-03 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-02 18:01
+  E2E-QLSTM  目標持有 QQQ  46.7%
+  QVT-QLSTM  目標持有 QQQ  94.1%（σ̂ = 21.2%）
+  QVT-QFWP   目標持有 QQQ  95.7%（σ̂ = 20.9%）
+  VT-20d     目標持有 QQQ  89.5%
+  E2E-QLSTM: buy 1 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 7 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 54 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 5 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 39 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: sell 13 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: buy 2 QQQ（市價，下一個開盤）→ accepted 
+資料到 2026-11-02 收盤；開盤成交的帳戶在 2026-11-03 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-02 22:34
+  E2E-QLSTM  目標持有 QQQ  46.7%
+  QVT-QLSTM  目標持有 QQQ  94.1%（σ̂ = 21.2%）
+  QVT-QFWP   目標持有 QQQ  95.7%（σ̂ = 20.9%）
+  VT-20d     目標持有 QQQ  89.5%
+  E2E-QLSTM: 這個訊號（2026-11-02）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-02）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-02）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-02）已經下過單，略過
+資料到 2026-11-02 收盤；開盤成交的帳戶在 2026-11-03 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-03 03:13
+  E2E-QLSTM  目標持有 QQQ  46.7%
+  QVT-QLSTM  目標持有 QQQ  94.1%（σ̂ = 21.2%）
+  QVT-QFWP   目標持有 QQQ  95.7%（σ̂ = 20.9%）
+  VT-20d     目標持有 QQQ  89.5%
+  E2E-QLSTM: 這個訊號（2026-11-02）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-02）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-02）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-02）已經下過單，略過
+資料到 2026-11-02 收盤；開盤成交的帳戶在 2026-11-03 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-03 07:55
+  E2E-QLSTM  目標持有 QQQ  46.7%
+  QVT-QLSTM  目標持有 QQQ  94.1%（σ̂ = 21.2%）
+  QVT-QFWP   目標持有 QQQ  95.7%（σ̂ = 20.9%）
+  VT-20d     目標持有 QQQ  89.5%
+  E2E-QLSTM: 這個訊號（2026-11-02）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-02）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-02）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-02）已經下過單，略過
+資料到 2026-11-02 收盤；收盤前下單的帳戶在 2026-11-03 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-03 15:41
+  E2E-QLSTM  目標持有 QQQ  46.7%
+  QVT-QLSTM  目標持有 QQQ  94.1%（σ̂ = 21.2%）
+  QVT-QFWP   目標持有 QQQ  95.7%（σ̂ = 20.9%）
+  VT-20d     目標持有 QQQ  89.5%
+等待 13 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 6 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 65 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 1 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 4 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 3 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 43 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: sell 11 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: buy 4 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 6 QQQ → filled filled 6 @ 685.82 at 2026-11-03T20:55:04.775065107Z
+  QVT-QLSTM-close: buy 65 BIL → filled filled 65 @ 91.42 at 2026-11-03T20:55:05.807676563Z
+  E2E-QLSTM-close: buy 1 QQQ → filled filled 1 @ 685.81 at 2026-11-03T20:55:07.624642386Z
+  E2E-QLSTM-close: buy 4 BIL → filled filled 4 @ 91.42 at 2026-11-03T20:55:11.198827068Z
+  QVT-QFWP-close: sell 3 QQQ → filled filled 3 @ 685.753333 at 2026-11-03T20:55:12.283895079Z
+  QVT-QFWP-close: buy 43 BIL → filled filled 43 @ 91.42 at 2026-11-03T20:55:11.40300701Z
+  VT-20d-close: sell 11 BIL → filled filled 11 @ 91.41 at 2026-11-03T20:55:17.764053547Z
+  VT-20d-close: buy 4 QQQ → filled filled 4 @ 685.71 at 2026-11-03T20:55:11.680494384Z
+資料到 2026-11-03 收盤；開盤成交的帳戶在 2026-11-04 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-03 18:01
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ  95.2%（σ̂ = 21.0%）
+  QVT-QFWP   目標持有 QQQ  95.9%（σ̂ = 20.9%）
+  VT-20d     目標持有 QQQ  89.1%
+  E2E-QLSTM: buy 1 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 5 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 1 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 2 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: buy 2 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-11-03 收盤；開盤成交的帳戶在 2026-11-04 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-03 21:32
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ  95.2%（σ̂ = 21.0%）
+  QVT-QFWP   目標持有 QQQ  95.9%（σ̂ = 20.9%）
+  VT-20d     目標持有 QQQ  89.1%
+  E2E-QLSTM: 這個訊號（2026-11-03）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-03）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-03）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-03）已經下過單，略過
+資料到 2026-11-03 收盤；開盤成交的帳戶在 2026-11-04 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-04 02:44
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ  95.2%（σ̂ = 21.0%）
+  QVT-QFWP   目標持有 QQQ  95.9%（σ̂ = 20.9%）
+  VT-20d     目標持有 QQQ  89.1%
+  E2E-QLSTM: 這個訊號（2026-11-03）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-03）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-03）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-03）已經下過單，略過
+資料到 2026-11-03 收盤；開盤成交的帳戶在 2026-11-04 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-04 08:09
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ  95.2%（σ̂ = 21.0%）
+  QVT-QFWP   目標持有 QQQ  95.9%（σ̂ = 20.9%）
+  VT-20d     目標持有 QQQ  89.1%
+  E2E-QLSTM: 這個訊號（2026-11-03）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-03）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-03）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-03）已經下過單，略過
+資料到 2026-11-03 收盤；收盤前下單的帳戶在 2026-11-04 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-04 15:40
+  E2E-QLSTM  目標持有 QQQ  46.8%
+  QVT-QLSTM  目標持有 QQQ  95.2%（σ̂ = 21.0%）
+  QVT-QFWP   目標持有 QQQ  95.9%（σ̂ = 20.9%）
+  VT-20d     目標持有 QQQ  89.1%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 13 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 2 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 1 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: sell 1 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 9 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 13 BIL → filled filled 13 @ 91.42 at 2026-11-04T20:55:06.276187007Z
+  QVT-QLSTM-close: buy 2 QQQ → filled filled 2 @ 691.08 at 2026-11-04T20:55:06.438116281Z
+  QVT-QFWP-close: buy 1 BIL → filled filled 1 @ 91.43 at 2026-11-04T20:55:09.512851928Z
+  VT-20d-close: sell 1 QQQ → filled filled 1 @ 690.97 at 2026-11-04T20:55:11.535154745Z
+  VT-20d-close: buy 9 BIL → filled filled 9 @ 91.43 at 2026-11-04T20:55:11.210421136Z
+資料到 2026-11-04 收盤；開盤成交的帳戶在 2026-11-05 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-04 18:00
+  E2E-QLSTM  目標持有 QQQ  46.7%
+  QVT-QLSTM  目標持有 QQQ  92.5%（σ̂ = 21.6%）
+  QVT-QFWP   目標持有 QQQ  92.2%（σ̂ = 21.7%）
+  VT-20d     目標持有 QQQ  86.8%
+  E2E-QLSTM: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  E2E-QLSTM: buy 6 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 4 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 28 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 5 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 35 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: sell 4 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: buy 28 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-11-04 收盤；開盤成交的帳戶在 2026-11-05 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-04 21:40
+  E2E-QLSTM  目標持有 QQQ  46.7%
+  QVT-QLSTM  目標持有 QQQ  92.5%（σ̂ = 21.6%）
+  QVT-QFWP   目標持有 QQQ  92.1%（σ̂ = 21.7%）
+  VT-20d     目標持有 QQQ  86.8%
+  E2E-QLSTM: 這個訊號（2026-11-04）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-04）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-04）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-04）已經下過單，略過
+資料到 2026-11-04 收盤；開盤成交的帳戶在 2026-11-05 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-05 03:07
+  E2E-QLSTM  目標持有 QQQ  46.7%
+  QVT-QLSTM  目標持有 QQQ  92.5%（σ̂ = 21.6%）
+  QVT-QFWP   目標持有 QQQ  92.1%（σ̂ = 21.7%）
+  VT-20d     目標持有 QQQ  86.8%
+  E2E-QLSTM: 這個訊號（2026-11-04）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-04）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-04）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-04）已經下過單，略過
+資料到 2026-11-04 收盤；開盤成交的帳戶在 2026-11-05 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-05 08:22
+  E2E-QLSTM  目標持有 QQQ  46.7%
+  QVT-QLSTM  目標持有 QQQ  92.5%（σ̂ = 21.6%）
+  QVT-QFWP   目標持有 QQQ  92.1%（σ̂ = 21.7%）
+  VT-20d     目標持有 QQQ  86.8%
+  E2E-QLSTM: 這個訊號（2026-11-04）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-04）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-04）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-04）已經下過單，略過
+資料到 2026-11-04 收盤；收盤前下單的帳戶在 2026-11-05 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-05 15:41
+  E2E-QLSTM  目標持有 QQQ  46.7%
+  QVT-QLSTM  目標持有 QQQ  92.5%（σ̂ = 21.6%）
+  QVT-QFWP   目標持有 QQQ  92.1%（σ̂ = 21.7%）
+  VT-20d     目標持有 QQQ  86.8%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 12 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 23 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 3 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 11 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 14 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 37 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: sell 11 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 18 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 12 QQQ → filled filled 12 @ 649.618333 at 2026-11-05T20:55:18.229592598Z
+  QVT-QLSTM-close: buy 23 BIL → filled filled 23 @ 91.44 at 2026-11-05T20:55:19.476346223Z
+  E2E-QLSTM-close: sell 3 QQQ → filled filled 3 @ 649.563333 at 2026-11-05T20:55:17.971072962Z
+  E2E-QLSTM-close: sell 11 BIL → filled filled 11 @ 91.43 at 2026-11-05T20:55:14.497179292Z
+  QVT-QFWP-close: sell 14 QQQ → filled filled 14 @ 649.44 at 2026-11-05T20:55:20.26372425Z
+  QVT-QFWP-close: buy 37 BIL → partially_filled 
+  VT-20d-close: sell 11 QQQ → filled filled 11 @ 649.5 at 2026-11-05T20:55:17.408063664Z
+  VT-20d-close: buy 18 BIL → filled filled 18 @ 91.44 at 2026-11-05T20:55:23.123184186Z
+資料到 2026-11-05 收盤；開盤成交的帳戶在 2026-11-06 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-05 18:01
+  E2E-QLSTM  目標持有 QQQ  46.6%
+  QVT-QLSTM  目標持有 QQQ  70.1%（σ̂ = 28.5%）
+  QVT-QFWP   目標持有 QQQ  64.4%（σ̂ = 31.1%）
+  VT-20d     目標持有 QQQ  63.6%
+  E2E-QLSTM: sell 23 BIL（市價，下一個開盤）→ accepted 
+  E2E-QLSTM: buy 3 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 31 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 215 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 39 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 272 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: sell 31 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: buy 215 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-11-05 收盤；開盤成交的帳戶在 2026-11-06 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-05 21:42
+  E2E-QLSTM  目標持有 QQQ  46.6%
+  QVT-QLSTM  目標持有 QQQ  70.1%（σ̂ = 28.5%）
+  QVT-QFWP   目標持有 QQQ  64.4%（σ̂ = 31.1%）
+  VT-20d     目標持有 QQQ  63.6%
+  E2E-QLSTM: 這個訊號（2026-11-05）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-05）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-05）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-05）已經下過單，略過
+資料到 2026-11-05 收盤；開盤成交的帳戶在 2026-11-06 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-06 03:11
+  E2E-QLSTM  目標持有 QQQ  46.6%
+  QVT-QLSTM  目標持有 QQQ  70.1%（σ̂ = 28.5%）
+  QVT-QFWP   目標持有 QQQ  64.4%（σ̂ = 31.1%）
+  VT-20d     目標持有 QQQ  63.6%
+  E2E-QLSTM: 這個訊號（2026-11-05）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-05）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-05）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-05）已經下過單，略過
+資料到 2026-11-05 收盤；開盤成交的帳戶在 2026-11-06 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-06 08:06
+  E2E-QLSTM  目標持有 QQQ  46.6%
+  QVT-QLSTM  目標持有 QQQ  70.1%（σ̂ = 28.5%）
+  QVT-QFWP   目標持有 QQQ  64.4%（σ̂ = 31.1%）
+  VT-20d     目標持有 QQQ  63.6%
+  E2E-QLSTM: 這個訊號（2026-11-05）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-05）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-05）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-05）已經下過單，略過
+資料到 2026-11-05 收盤；收盤前下單的帳戶在 2026-11-06 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-06 15:41
+  E2E-QLSTM  目標持有 QQQ  46.6%
+  QVT-QLSTM  目標持有 QQQ  70.1%（σ̂ = 28.5%）
+  QVT-QFWP   目標持有 QQQ  64.4%（σ̂ = 31.1%）
+  VT-20d     目標持有 QQQ  63.6%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 23 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 229 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 5 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 2 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 30 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 279 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: sell 24 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 234 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 23 QQQ → filled filled 23 @ 656.15 at 2026-11-06T20:55:07.300283952Z
+  QVT-QLSTM-close: buy 229 BIL → filled filled 229 @ 91.47 at 2026-11-06T20:55:11.765472884Z
+  E2E-QLSTM-close: buy 5 QQQ → filled filled 5 @ 656.062 at 2026-11-06T20:55:14.698050665Z
+  E2E-QLSTM-close: buy 2 BIL → filled filled 2 @ 91.47 at 2026-11-06T20:55:15.860010509Z
+  QVT-QFWP-close: sell 30 QQQ → filled filled 30 @ 656.038666 at 2026-11-06T20:55:25.03591942Z
+  QVT-QFWP-close: buy 279 BIL → filled filled 279 @ 91.47 at 2026-11-06T20:55:19.049373148Z
+  VT-20d-close: sell 24 QQQ → filled filled 24 @ 656.08 at 2026-11-06T20:55:16.938911081Z
+  VT-20d-close: buy 234 BIL → filled filled 234 @ 91.47 at 2026-11-06T20:55:23.282296011Z
+資料到 2026-11-06 收盤；開盤成交的帳戶在 2026-11-09 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-06 18:00
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  69.3%（σ̂ = 28.9%）
+  QVT-QFWP   目標持有 QQQ  68.3%（σ̂ = 29.3%）
+  VT-20d     目標持有 QQQ  62.4%
+  E2E-QLSTM: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  E2E-QLSTM: buy 11 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 14 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 36 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 6 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: sell 2 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: buy 21 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-11-06 收盤；開盤成交的帳戶在 2026-11-09 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-06 21:10
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  69.3%（σ̂ = 28.9%）
+  QVT-QFWP   目標持有 QQQ  68.3%（σ̂ = 29.3%）
+  VT-20d     目標持有 QQQ  62.4%
+  E2E-QLSTM: 這個訊號（2026-11-06）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-06）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-06）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-06）已經下過單，略過
+資料到 2026-11-06 收盤；開盤成交的帳戶在 2026-11-09 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-07 02:29
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  69.3%（σ̂ = 28.9%）
+  QVT-QFWP   目標持有 QQQ  68.3%（σ̂ = 29.3%）
+  VT-20d     目標持有 QQQ  62.4%
+  E2E-QLSTM: 這個訊號（2026-11-06）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-06）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-06）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-06）已經下過單，略過
+資料到 2026-11-06 收盤；開盤成交的帳戶在 2026-11-09 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-07 06:50
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  69.3%（σ̂ = 28.9%）
+  QVT-QFWP   目標持有 QQQ  68.3%（σ̂ = 29.3%）
+  VT-20d     目標持有 QQQ  62.4%
+  E2E-QLSTM: 這個訊號（2026-11-06）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-06）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-06）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-06）已經下過單，略過
+資料到 2026-11-06 收盤；收盤前下單的帳戶在 2026-11-09 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-09 15:41
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  69.3%（σ̂ = 28.9%）
+  QVT-QFWP   目標持有 QQQ  68.3%（σ̂ = 29.3%）
+  VT-20d     目標持有 QQQ  62.4%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: buy 15 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 11 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 29 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 6 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: sell 1 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 21 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 15 BIL → filled filled 15 @ 91.48 at 2026-11-09T20:55:09.829088188Z
+  E2E-QLSTM-close: buy 11 BIL → filled filled 11 @ 91.48 at 2026-11-09T20:55:19.963979079Z
+  QVT-QFWP-close: sell 29 BIL → filled filled 29 @ 91.47 at 2026-11-09T20:55:20.921918696Z
+  QVT-QFWP-close: buy 6 QQQ → filled filled 6 @ 679.45 at 2026-11-09T20:55:19.760102527Z
+  VT-20d-close: sell 1 QQQ → filled filled 1 @ 679.54 at 2026-11-09T20:55:21.743669773Z
+  VT-20d-close: buy 21 BIL → filled filled 21 @ 91.48 at 2026-11-09T20:55:21.950389185Z
+資料到 2026-11-09 收盤；開盤成交的帳戶在 2026-11-10 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-09 18:01
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  67.8%（σ̂ = 29.5%）
+  QVT-QFWP   目標持有 QQQ  71.8%（σ̂ = 27.9%）
+  VT-20d     目標持有 QQQ  56.6%
+  E2E-QLSTM: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  E2E-QLSTM: buy 6 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 3 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 21 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 31 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 4 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: sell 9 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: buy 66 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-11-09 收盤；開盤成交的帳戶在 2026-11-10 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-09 23:15
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  67.7%（σ̂ = 29.5%）
+  QVT-QFWP   目標持有 QQQ  71.6%（σ̂ = 27.9%）
+  VT-20d     目標持有 QQQ  56.6%
+  E2E-QLSTM: 這個訊號（2026-11-09）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-09）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-09）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-09）已經下過單，略過
+資料到 2026-11-09 收盤；開盤成交的帳戶在 2026-11-10 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-10 03:38
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  67.7%（σ̂ = 29.5%）
+  QVT-QFWP   目標持有 QQQ  71.6%（σ̂ = 27.9%）
+  VT-20d     目標持有 QQQ  56.6%
+  E2E-QLSTM: 這個訊號（2026-11-09）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-09）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-09）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-09）已經下過單，略過
+資料到 2026-11-09 收盤；開盤成交的帳戶在 2026-11-10 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-10 08:40
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  67.7%（σ̂ = 29.5%）
+  QVT-QFWP   目標持有 QQQ  71.6%（σ̂ = 27.9%）
+  VT-20d     目標持有 QQQ  56.6%
+  E2E-QLSTM: 這個訊號（2026-11-09）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-09）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-09）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-09）已經下過單，略過
+資料到 2026-11-09 收盤；收盤前下單的帳戶在 2026-11-10 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-10 15:41
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  67.7%（σ̂ = 29.5%）
+  QVT-QFWP   目標持有 QQQ  71.6%（σ̂ = 27.9%）
+  VT-20d     目標持有 QQQ  56.6%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 6 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 15 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 3 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 2 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 36 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 1 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: sell 11 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 55 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 6 QQQ → filled filled 6 @ 675.276667 at 2026-11-10T20:55:12.614559417Z
+  QVT-QLSTM-close: buy 15 BIL → filled filled 15 @ 91.5 at 2026-11-10T20:55:06.482913272Z
+  E2E-QLSTM-close: sell 3 QQQ → filled filled 3 @ 675.21 at 2026-11-10T20:55:11.580404561Z
+  E2E-QLSTM-close: buy 2 BIL → filled filled 2 @ 91.5 at 2026-11-10T20:55:12.630073126Z
+  QVT-QFWP-close: sell 36 BIL → filled filled 36 @ 91.49 at 2026-11-10T20:55:13.46631129Z
+  QVT-QFWP-close: buy 1 QQQ → filled filled 1 @ 675.25 at 2026-11-10T20:55:14.655780213Z
+  VT-20d-close: sell 11 QQQ → filled filled 11 @ 675.249091 at 2026-11-10T20:55:20.8748955Z
+  VT-20d-close: buy 55 BIL → filled filled 55 @ 91.5 at 2026-11-10T20:55:18.00541939Z
+資料到 2026-11-10 收盤；開盤成交的帳戶在 2026-11-11 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-10 18:01
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  66.5%（σ̂ = 30.1%）
+  QVT-QFWP   目標持有 QQQ  69.1%（σ̂ = 29.0%）
+  VT-20d     目標持有 QQQ  56.6%
+  E2E-QLSTM: buy 1 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 8 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 4 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 30 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-11-10 收盤；開盤成交的帳戶在 2026-11-11 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-10 21:04
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  66.5%（σ̂ = 30.1%）
+  QVT-QFWP   目標持有 QQQ  69.1%（σ̂ = 29.0%）
+  VT-20d     目標持有 QQQ  56.6%
+  E2E-QLSTM: 這個訊號（2026-11-10）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-10）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-10）已經下過單，略過
+  VT-20d: sell 3 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: buy 1 QQQ（市價，下一個開盤）→ accepted 
+資料到 2026-11-10 收盤；開盤成交的帳戶在 2026-11-11 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-11 02:58
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  66.5%（σ̂ = 30.1%）
+  QVT-QFWP   目標持有 QQQ  69.1%（σ̂ = 29.0%）
+  VT-20d     目標持有 QQQ  56.6%
+  E2E-QLSTM: 這個訊號（2026-11-10）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-10）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-10）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-10）已經下過單，略過
+資料到 2026-11-10 收盤；開盤成交的帳戶在 2026-11-11 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-11 07:51
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  66.5%（σ̂ = 30.1%）
+  QVT-QFWP   目標持有 QQQ  69.1%（σ̂ = 29.0%）
+  VT-20d     目標持有 QQQ  56.6%
+  E2E-QLSTM: 這個訊號（2026-11-10）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-10）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-10）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-10）已經下過單，略過
+資料到 2026-11-11 收盤；開盤成交的帳戶在 2026-11-12 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-11 18:01
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  65.9%（σ̂ = 30.3%）
+  QVT-QFWP   目標持有 QQQ  69.5%（σ̂ = 28.8%）
+  VT-20d     目標持有 QQQ  55.3%
+  E2E-QLSTM: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  E2E-QLSTM: buy 2 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 2 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 8 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 6 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: sell 4 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: buy 20 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-11-11 收盤；開盤成交的帳戶在 2026-11-12 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-11 22:14
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  65.9%（σ̂ = 30.3%）
+  QVT-QFWP   目標持有 QQQ  69.5%（σ̂ = 28.8%）
+  VT-20d     目標持有 QQQ  55.3%
+  E2E-QLSTM: 這個訊號（2026-11-11）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-11）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-11）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-11）已經下過單，略過
+資料到 2026-11-11 收盤；開盤成交的帳戶在 2026-11-12 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-12 03:36
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  65.9%（σ̂ = 30.3%）
+  QVT-QFWP   目標持有 QQQ  69.5%（σ̂ = 28.8%）
+  VT-20d     目標持有 QQQ  55.3%
+  E2E-QLSTM: 這個訊號（2026-11-11）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-11）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-11）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-11）已經下過單，略過
+資料到 2026-11-11 收盤；開盤成交的帳戶在 2026-11-12 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-12 08:54
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  65.9%（σ̂ = 30.3%）
+  QVT-QFWP   目標持有 QQQ  69.5%（σ̂ = 28.8%）
+  VT-20d     目標持有 QQQ  55.3%
+  E2E-QLSTM: 這個訊號（2026-11-11）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-11）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-11）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-11）已經下過單，略過
+資料到 2026-11-11 收盤；收盤前下單的帳戶在 2026-11-12 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-12 15:41
+  E2E-QLSTM  目標持有 QQQ  46.3%
+  QVT-QLSTM  目標持有 QQQ  65.9%（σ̂ = 30.3%）
+  QVT-QFWP   目標持有 QQQ  69.5%（σ̂ = 28.8%）
+  VT-20d     目標持有 QQQ  55.3%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 3 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 23 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 3 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 23 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: sell 3 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 23 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 3 QQQ → filled filled 3 @ 687.32 at 2026-11-12T20:55:09.166374514Z
+  QVT-QLSTM-close: buy 23 BIL → filled filled 23 @ 91.51 at 2026-11-12T20:55:14.351537852Z
+  QVT-QFWP-close: sell 3 QQQ → filled filled 3 @ 687.04 at 2026-11-12T20:55:22.882342637Z
+  QVT-QFWP-close: buy 23 BIL → filled filled 23 @ 91.51 at 2026-11-12T20:55:20.517380742Z
+  VT-20d-close: sell 3 QQQ → filled filled 3 @ 687.016667 at 2026-11-12T20:55:25.389329759Z
+  VT-20d-close: buy 23 BIL → filled filled 23 @ 91.51 at 2026-11-12T20:55:27.436510772Z
+資料到 2026-11-12 收盤；開盤成交的帳戶在 2026-11-13 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-12 18:01
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  78.5%（σ̂ = 25.5%）
+  QVT-QFWP   目標持有 QQQ  87.6%（σ̂ = 22.8%）
+  VT-20d     目標持有 QQQ  55.3%
+  E2E-QLSTM: buy 5 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 128 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 18 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 181 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 25 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: sell 2 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: buy 1 QQQ（市價，下一個開盤）→ accepted 
+資料到 2026-11-12 收盤；開盤成交的帳戶在 2026-11-13 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-12 21:46
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  78.5%（σ̂ = 25.5%）
+  QVT-QFWP   目標持有 QQQ  87.6%（σ̂ = 22.8%）
+  VT-20d     目標持有 QQQ  55.3%
+  E2E-QLSTM: 這個訊號（2026-11-12）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-12）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-12）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-12）已經下過單，略過
+資料到 2026-11-12 收盤；開盤成交的帳戶在 2026-11-13 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-13 03:23
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  78.4%（σ̂ = 25.5%）
+  QVT-QFWP   目標持有 QQQ  87.6%（σ̂ = 22.8%）
+  VT-20d     目標持有 QQQ  55.3%
+  E2E-QLSTM: 這個訊號（2026-11-12）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-12）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-12）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-12）已經下過單，略過
+資料到 2026-11-12 收盤；開盤成交的帳戶在 2026-11-13 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-13 08:18
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  78.4%（σ̂ = 25.5%）
+  QVT-QFWP   目標持有 QQQ  87.6%（σ̂ = 22.8%）
+  VT-20d     目標持有 QQQ  55.3%
+  E2E-QLSTM: 這個訊號（2026-11-12）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-12）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-12）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-12）已經下過單，略過
+資料到 2026-11-12 收盤；收盤前下單的帳戶在 2026-11-13 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-13 15:41
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  78.4%（σ̂ = 25.5%）
+  QVT-QFWP   目標持有 QQQ  87.6%（σ̂ = 22.8%）
+  VT-20d     目標持有 QQQ  55.3%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 131 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 17 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 3 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 192 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 25 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: sell 3 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 131 BIL → filled filled 131 @ 91.52 at 2026-11-13T20:55:04.207441564Z
+  QVT-QLSTM-close: buy 17 QQQ → filled filled 17 @ 680.395294 at 2026-11-13T20:55:08.144191267Z
+  E2E-QLSTM-close: sell 3 BIL → filled filled 3 @ 91.52 at 2026-11-13T20:55:11.698841994Z
+  QVT-QFWP-close: sell 192 BIL → filled filled 192 @ 91.52 at 2026-11-13T20:55:10.447024918Z
+  QVT-QFWP-close: buy 25 QQQ → filled filled 25 @ 680.472 at 2026-11-13T20:55:12.464108305Z
+  VT-20d-close: sell 3 BIL → filled filled 3 @ 91.52 at 2026-11-13T20:55:12.539730378Z
+資料到 2026-11-13 收盤；開盤成交的帳戶在 2026-11-16 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-13 18:01
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  73.4%（σ̂ = 27.3%）
+  QVT-QFWP   目標持有 QQQ  79.8%（σ̂ = 25.1%）
+  VT-20d     目標持有 QQQ  56.5%
+  E2E-QLSTM: sell 4 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 8 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 52 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 11 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 74 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: sell 20 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: buy 2 QQQ（市價，下一個開盤）→ accepted 
+資料到 2026-11-13 收盤；開盤成交的帳戶在 2026-11-16 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-13 21:36
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  73.4%（σ̂ = 27.3%）
+  QVT-QFWP   目標持有 QQQ  79.8%（σ̂ = 25.1%）
+  VT-20d     目標持有 QQQ  56.5%
+  E2E-QLSTM: 這個訊號（2026-11-13）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-13）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-13）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-13）已經下過單，略過
+資料到 2026-11-13 收盤；開盤成交的帳戶在 2026-11-16 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-14 02:47
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  73.4%（σ̂ = 27.3%）
+  QVT-QFWP   目標持有 QQQ  79.8%（σ̂ = 25.1%）
+  VT-20d     目標持有 QQQ  56.5%
+  E2E-QLSTM: 這個訊號（2026-11-13）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-13）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-13）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-13）已經下過單，略過
+資料到 2026-11-13 收盤；開盤成交的帳戶在 2026-11-16 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-14 07:22
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  73.4%（σ̂ = 27.3%）
+  QVT-QFWP   目標持有 QQQ  79.8%（σ̂ = 25.1%）
+  VT-20d     目標持有 QQQ  56.5%
+  E2E-QLSTM: 這個訊號（2026-11-13）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-13）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-13）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-13）已經下過單，略過
+資料到 2026-11-13 收盤；收盤前下單的帳戶在 2026-11-16 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-16 15:40
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  73.4%（σ̂ = 27.3%）
+  QVT-QFWP   目標持有 QQQ  79.8%（σ̂ = 25.1%）
+  VT-20d     目標持有 QQQ  56.5%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 8 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 47 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 8 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 12 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 75 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: sell 24 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: buy 2 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 8 QQQ → filled filled 8 @ 661.29625 at 2026-11-16T20:55:11.750315148Z
+  QVT-QLSTM-close: buy 47 BIL → filled filled 47 @ 91.55 at 2026-11-16T20:55:09.23455478Z
+  E2E-QLSTM-close: sell 8 BIL → filled filled 8 @ 91.54 at 2026-11-16T20:55:12.781642563Z
+  QVT-QFWP-close: sell 12 QQQ → filled filled 12 @ 661.2 at 2026-11-16T20:55:16.580328514Z
+  QVT-QFWP-close: buy 75 BIL → filled filled 75 @ 91.55 at 2026-11-16T20:55:14.184218454Z
+  VT-20d-close: sell 24 BIL → filled filled 24 @ 91.54 at 2026-11-16T20:55:13.300937636Z
+  VT-20d-close: buy 2 QQQ → filled filled 2 @ 661.215 at 2026-11-16T20:55:11.698657053Z
+資料到 2026-11-16 收盤；開盤成交的帳戶在 2026-11-17 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-16 18:01
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  72.3%（σ̂ = 27.7%）
+  QVT-QFWP   目標持有 QQQ  74.4%（σ̂ = 26.9%）
+  VT-20d     目標持有 QQQ  55.5%
+  E2E-QLSTM: sell 10 BIL（市價，下一個開盤）→ accepted 
+  E2E-QLSTM: buy 2 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 7 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 6 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 51 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: buy 5 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-11-16 收盤；開盤成交的帳戶在 2026-11-17 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-16 23:41
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  72.3%（σ̂ = 27.7%）
+  QVT-QFWP   目標持有 QQQ  74.4%（σ̂ = 26.9%）
+  VT-20d     目標持有 QQQ  55.5%
+  E2E-QLSTM: 這個訊號（2026-11-16）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-16）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-16）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-16）已經下過單，略過
+資料到 2026-11-16 收盤；開盤成交的帳戶在 2026-11-17 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-17 04:29
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  72.3%（σ̂ = 27.7%）
+  QVT-QFWP   目標持有 QQQ  74.4%（σ̂ = 26.9%）
+  VT-20d     目標持有 QQQ  55.5%
+  E2E-QLSTM: 這個訊號（2026-11-16）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-16）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-16）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-16）已經下過單，略過
+資料到 2026-11-16 收盤；開盤成交的帳戶在 2026-11-17 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-17 09:45
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  72.3%（σ̂ = 27.7%）
+  QVT-QFWP   目標持有 QQQ  74.4%（σ̂ = 26.9%）
+  VT-20d     目標持有 QQQ  55.5%
+  E2E-QLSTM: 這個訊號（2026-11-16）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-16）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-16）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-16）已經下過單，略過
+資料到 2026-11-16 收盤；收盤前下單的帳戶在 2026-11-17 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-17 15:40
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  72.3%（σ̂ = 27.7%）
+  QVT-QFWP   目標持有 QQQ  74.4%（σ̂ = 26.9%）
+  VT-20d     目標持有 QQQ  55.5%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: buy 1 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 3 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 1 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 1 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 6 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 56 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: buy 9 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 1 QQQ → filled filled 1 @ 654.55 at 2026-11-17T20:55:03.536940848Z
+  QVT-QLSTM-close: buy 3 BIL → filled filled 3 @ 91.55 at 2026-11-17T20:55:05.691404413Z
+  E2E-QLSTM-close: buy 1 QQQ → filled filled 1 @ 654.55 at 2026-11-17T20:55:03.534482368Z
+  E2E-QLSTM-close: buy 1 BIL → filled filled 1 @ 91.55 at 2026-11-17T20:55:03.864839157Z
+  QVT-QFWP-close: sell 6 QQQ → filled filled 6 @ 654.571667 at 2026-11-17T20:55:07.011213198Z
+  QVT-QFWP-close: buy 56 BIL → filled filled 56 @ 91.55 at 2026-11-17T20:55:12.037783781Z
+  VT-20d-close: buy 9 BIL → filled filled 9 @ 91.55 at 2026-11-17T20:55:08.638863263Z
+資料到 2026-11-17 收盤；開盤成交的帳戶在 2026-11-18 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-17 18:01
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  70.9%（σ̂ = 28.2%）
+  QVT-QFWP   目標持有 QQQ  72.8%（σ̂ = 27.5%）
+  VT-20d     目標持有 QQQ  55.5%
+  E2E-QLSTM: buy 5 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 15 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 15 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: buy 6 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-11-17 收盤；開盤成交的帳戶在 2026-11-18 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-17 22:47
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  70.9%（σ̂ = 28.2%）
+  QVT-QFWP   目標持有 QQQ  72.8%（σ̂ = 27.5%）
+  VT-20d     目標持有 QQQ  55.5%
+  E2E-QLSTM: 這個訊號（2026-11-17）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-17）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-17）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-17）已經下過單，略過
+資料到 2026-11-17 收盤；開盤成交的帳戶在 2026-11-18 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-18 03:47
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  70.9%（σ̂ = 28.2%）
+  QVT-QFWP   目標持有 QQQ  72.8%（σ̂ = 27.5%）
+  VT-20d     目標持有 QQQ  55.5%
+  E2E-QLSTM: 這個訊號（2026-11-17）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-17）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-17）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-17）已經下過單，略過
+資料到 2026-11-17 收盤；開盤成交的帳戶在 2026-11-18 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-18 09:23
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  70.9%（σ̂ = 28.2%）
+  QVT-QFWP   目標持有 QQQ  72.8%（σ̂ = 27.5%）
+  VT-20d     目標持有 QQQ  55.5%
+  E2E-QLSTM: 這個訊號（2026-11-17）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-17）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-17）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-17）已經下過單，略過
+資料到 2026-11-17 收盤；收盤前下單的帳戶在 2026-11-18 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-18 15:41
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  70.9%（σ̂ = 28.2%）
+  QVT-QFWP   目標持有 QQQ  72.8%（σ̂ = 27.5%）
+  VT-20d     目標持有 QQQ  55.5%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 1 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 19 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: buy 1 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 1 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 18 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: buy 1 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: buy 2 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 1 QQQ → filled filled 1 @ 659.87 at 2026-11-18T20:55:07.932194732Z
+  QVT-QLSTM-close: buy 19 BIL → filled filled 19 @ 91.56 at 2026-11-18T20:55:10.021956881Z
+  E2E-QLSTM-close: buy 1 QQQ → filled filled 1 @ 659.95 at 2026-11-18T20:55:12.528150002Z
+  QVT-QFWP-close: sell 1 QQQ → filled filled 1 @ 659.82 at 2026-11-18T20:55:15.474031913Z
+  QVT-QFWP-close: buy 18 BIL → filled filled 18 @ 91.56 at 2026-11-18T20:55:16.324204886Z
+  VT-20d-close: buy 1 QQQ → filled filled 1 @ 659.93 at 2026-11-18T20:55:19.285014725Z
+  VT-20d-close: buy 2 BIL → filled filled 2 @ 91.56 at 2026-11-18T20:55:19.972757352Z
+資料到 2026-11-18 收盤；開盤成交的帳戶在 2026-11-19 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-18 18:01
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  73.7%（σ̂ = 27.1%）
+  QVT-QFWP   目標持有 QQQ  72.9%（σ̂ = 27.4%）
+  VT-20d     目標持有 QQQ  55.9%
+  E2E-QLSTM: sell 6 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 30 BIL（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 3 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 1 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 2 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: sell 6 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-11-18 收盤；開盤成交的帳戶在 2026-11-19 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-18 22:45
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  73.7%（σ̂ = 27.1%）
+  QVT-QFWP   目標持有 QQQ  72.9%（σ̂ = 27.4%）
+  VT-20d     目標持有 QQQ  55.9%
+  E2E-QLSTM: 這個訊號（2026-11-18）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-18）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-18）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-18）已經下過單，略過
+資料到 2026-11-18 收盤；開盤成交的帳戶在 2026-11-19 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-19 04:02
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  73.7%（σ̂ = 27.1%）
+  QVT-QFWP   目標持有 QQQ  72.9%（σ̂ = 27.4%）
+  VT-20d     目標持有 QQQ  55.9%
+  E2E-QLSTM: 這個訊號（2026-11-18）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-18）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-18）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-18）已經下過單，略過
+資料到 2026-11-18 收盤；開盤成交的帳戶在 2026-11-19 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-19 09:34
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  73.7%（σ̂ = 27.1%）
+  QVT-QFWP   目標持有 QQQ  72.9%（σ̂ = 27.4%）
+  VT-20d     目標持有 QQQ  55.9%
+  E2E-QLSTM: 這個訊號（2026-11-18）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-18）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-18）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-18）已經下過單，略過
+資料到 2026-11-18 收盤；收盤前下單的帳戶在 2026-11-19 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-19 15:40
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  73.7%（σ̂ = 27.1%）
+  QVT-QFWP   目標持有 QQQ  72.9%（σ̂ = 27.4%）
+  VT-20d     目標持有 QQQ  55.9%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 32 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 2 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 1 QQQ（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 5 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 2 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 3 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: sell 1 QQQ（收盤前市價）→ pending_new 
+  VT-20d-close: sell 7 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 32 BIL → filled filled 32 @ 91.56 at 2026-11-19T20:55:04.93616079Z
+  QVT-QLSTM-close: buy 2 QQQ → filled filled 2 @ 646.375 at 2026-11-19T20:55:08.732462381Z
+  E2E-QLSTM-close: sell 1 QQQ → filled filled 1 @ 646.29 at 2026-11-19T20:55:09.077084099Z
+  E2E-QLSTM-close: sell 5 BIL → filled filled 5 @ 91.56 at 2026-11-19T20:55:14.103665837Z
+  QVT-QFWP-close: sell 2 QQQ → filled filled 2 @ 646.255 at 2026-11-19T20:55:12.972022651Z
+  QVT-QFWP-close: sell 3 BIL → filled filled 3 @ 91.56 at 2026-11-19T20:55:11.207929773Z
+  VT-20d-close: sell 1 QQQ → filled filled 1 @ 646.45 at 2026-11-19T20:55:14.138203833Z
+  VT-20d-close: sell 7 BIL → filled filled 7 @ 91.56 at 2026-11-19T20:55:12.420398362Z
+資料到 2026-11-19 收盤；開盤成交的帳戶在 2026-11-20 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-19 18:01
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  67.4%（σ̂ = 29.7%）
+  QVT-QFWP   目標持有 QQQ  62.4%（σ̂ = 32.0%）
+  VT-20d     目標持有 QQQ  56.8%
+  E2E-QLSTM: sell 8 BIL（市價，下一個開盤）→ accepted 
+  E2E-QLSTM: buy 1 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 8 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 54 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 14 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 98 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: sell 15 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: buy 2 QQQ（市價，下一個開盤）→ accepted 
+資料到 2026-11-19 收盤；開盤成交的帳戶在 2026-11-20 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-19 22:39
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  67.4%（σ̂ = 29.7%）
+  QVT-QFWP   目標持有 QQQ  62.4%（σ̂ = 32.0%）
+  VT-20d     目標持有 QQQ  56.8%
+  E2E-QLSTM: 這個訊號（2026-11-19）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-19）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-19）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-19）已經下過單，略過
+資料到 2026-11-19 收盤；開盤成交的帳戶在 2026-11-20 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-20 03:49
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  67.4%（σ̂ = 29.7%）
+  QVT-QFWP   目標持有 QQQ  62.4%（σ̂ = 32.0%）
+  VT-20d     目標持有 QQQ  56.8%
+  E2E-QLSTM: 這個訊號（2026-11-19）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-19）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-19）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-19）已經下過單，略過
+資料到 2026-11-19 收盤；開盤成交的帳戶在 2026-11-20 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-20 09:13
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  67.4%（σ̂ = 29.7%）
+  QVT-QFWP   目標持有 QQQ  62.4%（σ̂ = 32.0%）
+  VT-20d     目標持有 QQQ  56.8%
+  E2E-QLSTM: 這個訊號（2026-11-19）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-19）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-19）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-19）已經下過單，略過
+資料到 2026-11-19 收盤；收盤前下單的帳戶在 2026-11-20 紐約 15:55 送單（16:00 收盤）；現在紐約 2026-11-20 15:41
+  E2E-QLSTM  目標持有 QQQ  46.5%
+  QVT-QLSTM  目標持有 QQQ  67.4%（σ̂ = 29.7%）
+  QVT-QFWP   目標持有 QQQ  62.4%（σ̂ = 32.0%）
+  VT-20d     目標持有 QQQ  56.8%
+等待 14 分鐘到紐約 15:55……
+  QVT-QLSTM-close: sell 10 QQQ（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: buy 46 BIL（收盤前市價）→ pending_new 
+  E2E-QLSTM-close: sell 17 BIL（收盤前市價）→ pending_new 
+  QVT-QFWP-close: sell 16 QQQ（收盤前市價）→ pending_new 
+  QVT-QFWP-close: buy 87 BIL（收盤前市價）→ pending_new 
+  VT-20d-close: sell 20 BIL（收盤前市價）→ pending_new 
+  QVT-QLSTM-close: sell 10 QQQ → filled filled 10 @ 607.26 at 2026-11-20T20:55:11.6284052Z
+  QVT-QLSTM-close: buy 46 BIL → filled filled 46 @ 91.6 at 2026-11-20T20:55:13.406398537Z
+  E2E-QLSTM-close: sell 17 BIL → filled filled 17 @ 91.59 at 2026-11-20T20:55:21.143509039Z
+  QVT-QFWP-close: sell 16 QQQ → filled filled 16 @ 607.11625 at 2026-11-20T20:55:23.783346067Z
+  QVT-QFWP-close: buy 87 BIL → filled filled 87 @ 91.6 at 2026-11-20T20:55:19.237346733Z
+  VT-20d-close: sell 20 BIL → filled filled 20 @ 91.59 at 2026-11-20T20:55:24.327991887Z
+資料到 2026-11-20 收盤；開盤成交的帳戶在 2026-11-23 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-20 18:01
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  51.5%（σ̂ = 38.9%）
+  QVT-QFWP   目標持有 QQQ  49.7%（σ̂ = 40.3%）
+  VT-20d     目標持有 QQQ  50.2%
+  E2E-QLSTM: sell 6 BIL（市價，下一個開盤）→ accepted 
+  E2E-QLSTM: buy 2 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: sell 20 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QLSTM: buy 142 BIL（市價，下一個開盤）→ accepted 
+  QVT-QFWP: sell 16 QQQ（市價，下一個開盤）→ accepted 
+  QVT-QFWP: buy 114 BIL（市價，下一個開盤）→ accepted 
+  VT-20d: sell 7 QQQ（市價，下一個開盤）→ accepted 
+  VT-20d: buy 55 BIL（市價，下一個開盤）→ accepted 
+資料到 2026-11-20 收盤；開盤成交的帳戶在 2026-11-23 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-20 22:21
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  51.5%（σ̂ = 38.9%）
+  QVT-QFWP   目標持有 QQQ  49.7%（σ̂ = 40.3%）
+  VT-20d     目標持有 QQQ  50.2%
+  E2E-QLSTM: 這個訊號（2026-11-20）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-20）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-20）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-20）已經下過單，略過
+資料到 2026-11-20 收盤；開盤成交的帳戶在 2026-11-23 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-21 03:30
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  51.5%（σ̂ = 38.9%）
+  QVT-QFWP   目標持有 QQQ  49.7%（σ̂ = 40.3%）
+  VT-20d     目標持有 QQQ  50.2%
+  E2E-QLSTM: 這個訊號（2026-11-20）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-20）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-20）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-20）已經下過單，略過
+資料到 2026-11-20 收盤；開盤成交的帳戶在 2026-11-23 開盤成交（盤中送出則立即成交；截止 16:00 前）；現在紐約 2026-11-21 08:37
+  E2E-QLSTM  目標持有 QQQ  46.4%
+  QVT-QLSTM  目標持有 QQQ  51.5%（σ̂ = 38.9%）
+  QVT-QFWP   目標持有 QQQ  49.7%（σ̂ = 40.3%）
+  VT-20d     目標持有 QQQ  50.2%
+  E2E-QLSTM: 這個訊號（2026-11-20）已經下過單，略過
+  QVT-QLSTM: 這個訊號（2026-11-20）已經下過單，略過
+  QVT-QFWP: 這個訊號（2026-11-20）已經下過單，略過
+  VT-20d: 這個訊號（2026-11-20）已經下過單，略過

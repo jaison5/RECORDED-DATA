@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans TC','Noto Sans CJK TC',sans-serif"><title>實盤模擬累積報酬</title><rect width="100%" height="100%" fill="#FFFFFF"/><text x="24.0" y="30.0" font-size="16" fill="#1F1F1F" text-anchor="start" font-weight="bold">實盤模擬一個月的累積報酬（模型版，收盤價成交、單邊成本 0.05%）</text>
+<text x="24.0" y="50.0" font-size="12" fill="#5C5C5C" text-anchor="start" font-weight="normal">2026-10-20 收盤起算，到 2026-11-20；VOO 代表三大 ETF（IVV、SPY 幾乎重疊）</text>
+<line x1="70.0" y1="364.5" x2="660.0" y2="364.5" stroke="#E6E6E6" stroke-width="1"/>
+<text x="64.0" y="368.5" font-size="11" fill="#5C5C5C" text-anchor="end" font-weight="normal">−15%</text>
+<line x1="70.0" y1="279.9" x2="660.0" y2="279.9" stroke="#E6E6E6" stroke-width="1"/>
+<text x="64.0" y="283.9" font-size="11" fill="#5C5C5C" text-anchor="end" font-weight="normal">−10%</text>
+<line x1="70.0" y1="195.3" x2="660.0" y2="195.3" stroke="#E6E6E6" stroke-width="1"/>
+<text x="64.0" y="199.3" font-size="11" fill="#5C5C5C" text-anchor="end" font-weight="normal">−5%</text>
+<line x1="70.0" y1="110.7" x2="660.0" y2="110.7" stroke="#BDBDBD" stroke-width="1"/>
+<text x="64.0" y="114.7" font-size="11" fill="#5C5C5C" text-anchor="end" font-weight="normal">−0%</text>
+<line x1="70.0" y1="385.0" x2="70.0" y2="389.0" stroke="#BDBDBD" stroke-width="1"/>
+<text x="70.0" y="402.0" font-size="11" fill="#5C5C5C" text-anchor="middle" font-weight="normal">10-20</text>
+<line x1="172.6" y1="385.0" x2="172.6" y2="389.0" stroke="#BDBDBD" stroke-width="1"/>
+<text x="172.6" y="402.0" font-size="11" fill="#5C5C5C" text-anchor="middle" font-weight="normal">10-26</text>
+<line x1="300.9" y1="385.0" x2="300.9" y2="389.0" stroke="#BDBDBD" stroke-width="1"/>
+<text x="300.9" y="402.0" font-size="11" fill="#5C5C5C" text-anchor="middle" font-weight="normal">11-02</text>
+<line x1="429.1" y1="385.0" x2="429.1" y2="389.0" stroke="#BDBDBD" stroke-width="1"/>
+<text x="429.1" y="402.0" font-size="11" fill="#5C5C5C" text-anchor="middle" font-weight="normal">11-09</text>
+<line x1="557.4" y1="385.0" x2="557.4" y2="389.0" stroke="#BDBDBD" stroke-width="1"/>
+<text x="557.4" y="402.0" font-size="11" fill="#5C5C5C" text-anchor="middle" font-weight="normal">11-16</text>
+<polyline points="70.0,110.7 95.7,102.6 121.3,125.3 147.0,125.1 172.6,116.3 198.3,106.1 223.9,101.3 249.6,112.5 275.2,139.6 300.9,150.1 326.5,145.2 352.2,137.7 377.8,188.1 403.5,177.3 429.1,150.3 454.8,155.4 480.4,137.6 506.1,140.1 531.7,149.0 557.4,169.3 583.0,174.8 608.7,171.8 634.3,188.3 660.0,230.7" fill="none" stroke="#0072B2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><title>E2E-QLSTM -7.1%</title></polyline>
+<polyline points="70.0,110.7 95.7,93.7 121.3,142.6 147.0,142.7 172.6,124.4 198.3,103.0 223.9,92.8 249.6,117.0 275.2,175.5 300.9,197.7 326.5,187.8 352.2,173.0 377.8,273.7 403.5,253.9 429.1,215.5 454.8,222.9 480.4,198.0 506.1,201.4 531.7,214.0 557.4,247.2 583.0,255.5 608.7,251.2 634.3,275.2 660.0,339.0" fill="none" stroke="#D55E00" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><title>QVT-QLSTM -13.5%</title></polyline>
+<polyline points="70.0,110.7 95.7,93.7 121.3,142.6 147.0,142.7 172.6,124.4 198.3,103.0 223.9,92.8 249.6,117.0 275.2,175.5 300.9,197.7 326.5,187.8 352.2,172.8 377.8,274.2 403.5,254.5 429.1,219.3 454.8,226.5 480.4,200.3 506.1,203.9 531.7,217.1 557.4,254.3 583.0,263.3 608.7,258.8 634.3,283.5 660.0,346.2" fill="none" stroke="#CC79A7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 4"><title>QVT-QFWP -13.9%</title></polyline>
+<polyline points="70.0,110.7 95.7,93.7 121.3,142.6 147.0,142.7 172.6,124.4 198.3,103.0 223.9,92.8 249.6,117.0 275.2,175.5 300.9,197.6 326.5,189.0 352.2,174.9 377.8,269.0 403.5,250.3 429.1,215.4 454.8,222.0 480.4,201.3 506.1,204.2 531.7,214.6 557.4,237.9 583.0,244.3 608.7,240.9 634.3,259.8 660.0,308.6" fill="none" stroke="#009E73" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><title>VT-20d -11.7%</title></polyline>
+<polyline points="70.0,110.7 95.7,92.9 121.3,141.7 147.0,141.9 172.6,123.5 198.3,102.2 223.9,91.9 249.6,116.1 275.2,174.7 300.9,196.9 326.5,187.0 352.2,171.3 377.8,277.1 403.5,255.8 429.1,201.0 454.8,211.8 480.4,175.0 506.1,180.2 531.7,199.7 557.4,242.4 583.0,253.8 608.7,247.7 634.3,281.8 660.0,368.1" fill="none" stroke="#333333" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><title>QQQ -15.2%</title></polyline>
+<polyline points="70.0,110.7 95.7,101.3 121.3,121.5 147.0,130.4 172.6,118.8 198.3,109.0 223.9,103.3 249.6,109.5 275.2,139.4 300.9,147.8 326.5,142.5 352.2,115.6 377.8,189.3 403.5,184.5 429.1,146.5 454.8,152.1 480.4,130.9 506.1,136.6 531.7,142.8 557.4,174.2 583.0,191.2 608.7,195.7 634.3,227.5 660.0,281.3" fill="none" stroke="#8C8C8C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 4"><title>VOO -10.1%</title></polyline>
+<line x1="663.0" y1="230.7" x2="672.0" y2="230.7" stroke="#0072B2" stroke-width="1"/>
+<text x="675.0" y="234.7" font-size="12" fill="#1F1F1F" text-anchor="start" font-weight="normal">E2E−QLSTM −7.1%</text>
+<line x1="663.0" y1="339.0" x2="672.0" y2="339.0" stroke="#D55E00" stroke-width="1"/>
+<text x="675.0" y="343.0" font-size="12" fill="#1F1F1F" text-anchor="start" font-weight="normal">QVT−QLSTM −13.5%</text>
+<line x1="663.0" y1="346.2" x2="672.0" y2="354.0" stroke="#CC79A7" stroke-width="1"/>
+<text x="675.0" y="358.0" font-size="12" fill="#1F1F1F" text-anchor="start" font-weight="normal">QVT−QFWP −13.9%</text>
+<line x1="663.0" y1="308.6" x2="672.0" y2="308.6" stroke="#009E73" stroke-width="1"/>
+<text x="675.0" y="312.6" font-size="12" fill="#1F1F1F" text-anchor="start" font-weight="normal">VT−20d −11.7%</text>
+<line x1="663.0" y1="368.1" x2="672.0" y2="369.0" stroke="#333333" stroke-width="1"/>
+<text x="675.0" y="373.0" font-size="12" fill="#1F1F1F" text-anchor="start" font-weight="normal">QQQ −15.2%</text>
+<line x1="663.0" y1="281.3" x2="672.0" y2="281.3" stroke="#8C8C8C" stroke-width="1"/>
+<text x="675.0" y="285.3" font-size="12" fill="#1F1F1F" text-anchor="start" font-weight="normal">VOO −10.1%</text>
+<text x="24.0" y="425.0" font-size="11" fill="#5C5C5C" text-anchor="start" font-weight="normal">資料：Alpaca 模擬帳戶的訊號紀錄與 Yahoo Finance 日線；年化與統計見 tables/summary_tables.md</text></svg>

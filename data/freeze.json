@@ -1,0 +1,10 @@
+{
+ "frozen_at_utc": "2026-10-20T16:52:49+00:00",
+ "models": {
+  "e2e_QLSTM_y2026.pt": "be8634cf8dffbfedf7e7121619d93089e65e6ff0f8efa0a3c0c0694dafbb2931",
+  "vol_QFWP_y2026.pt": "9441d6489da048df43f27922837bd0b278f9e84cceecbf5f0de9c90809fd533e",
+  "vol_QLSTM_y2026.pt": "d1d50e8903bff374d1c6537bfae5fc9bab216937ac1d6eee7b88b494f3b82975"
+ },
+ "pt.py": "5da9823adf269074c0e995bd9bbd5fb3d171f0eeafb591ece03f6fd43a7069e8",
+ "PROTOCOL.md": "06cf97285235234c65b438cbf0d49d016707494ce4e3e7fd08128fdf6d2e9f85"
+}
