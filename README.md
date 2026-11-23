@@ -143,19 +143,4 @@ extensions/               延伸研究的完整結果報告（副本）
 
 模型和程式在私人 repo `Paper-trading`。
 
-## 6. 更新方式
 
-先更新雲端 repo 的本機副本：
-
-```powershell
-git -C B:\qfin-main\PAPER_TRADING_CLOUD\Paper-trading pull
-```
-
-再重算表格和圖：
-
-```powershell
-cd B:\qfin-main\PAPER_TRADING_CLOUD\RECORDED-DATA; B:\qfin-main\B\.venv-gpu\Scripts\python.exe -B analysis\make_report.py
-```
-
-- 只需要 numpy 和 pandas。
-- 回測對照會讀取 `B:\qfin-main\IEEE_EXT\D` 的回測部位和價格（只讀，不寫入）。
