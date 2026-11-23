@@ -1,6 +1,6 @@
 # RECORDED-DATA：論文策略的實盤模擬紀錄
 
-論文 *Quantum Volatility Forecasting for Volatility-Targeted Trading* 的策略，用 Alpaca 模擬帳戶在真實時間下執行的前瞻測試（forward test）紀錄。這裡也放了向指導老師報告用的整理。
+論文 *Quantum Volatility Forecasting for Volatility-Targeted Trading* 的策略，用 Alpaca 模擬帳戶在真實時間下執行的前瞻測試（forward test）紀錄。
 
 > **狀態更新於 2026-11-23**，資料到紐約時間 2026-11-20 收盤。下面的數字是當天寫的；重跑 `analysis/make_report.py` 之後，`tables/`、`figures/` 會更新，這份 README 的文字不會自動更新。
 
@@ -18,7 +18,7 @@
 | 主要觀察期（21 個交易日） | **已完成**：開盤帳戶 10-21～11-18，收盤前帳戶 10-22～11-19。 |
 | 延長樣本 | 雲端照常自動執行到 **2026-12-15**，這段之後另外報告。 |
 | 資料完整性 | 10-21～11-20 的 23 個交易日每天都有紀錄。4 個策略共 100 個訊號，沒有錯過。設定期（10-20～10-21）之後的訂單全部成交。 |
-| 執行上出過的事 | 10-20：Alpaca 模擬帳戶不撮合市價收盤單，第一批單全部過期。10-21：GitHub 排程延遲約 3 小時，4 個收盤前帳戶錯過一天。之後改由 cron-job.org 準時觸發，沒有再發生。詳見 `PROTOCOL.md` 變更紀錄。 |
+| 執行上出過的事 | 10-20：Alpaca 模擬帳戶不撮合市價收盤單，第一批單全部過期。10-21：GitHub 排程延遲約 3 小時，4 個收盤前帳戶錯過一天。之後改由 cron-job.org 準時觸發，沒有再發生。|
 | 接下來的特殊交易日 | 11-26 感恩節休市；11-27 提早在 13:00 收盤，收盤前的送單時段已改成 12:05～12:57。 |
 
 ### 策略與帳戶
@@ -108,7 +108,6 @@
 
 ```
 README.md                 本檔：目前狀況
-REPORT.md                 給老師的報告（會議用）
 EXTENSIONS.md             延伸研究摘要
 PROTOCOL.md               事先登記的規則與變更紀錄（雲端 repo 原檔的副本）
 data/                     雲端 repo 的原始紀錄（副本）
@@ -159,9 +158,3 @@ cd B:\qfin-main\PAPER_TRADING_CLOUD\RECORDED-DATA; B:\qfin-main\B\.venv-gpu\Scri
 
 - 只需要 numpy 和 pandas。
 - 回測對照會讀取 `B:\qfin-main\IEEE_EXT\D` 的回測部位和價格（只讀，不寫入）。
-
-## 7. 下一步
-
-1. 12-15 結束後做最終報告：主要觀察期加上延長樣本，再決定寫進完整版論文（`IEEE_EXT`），還是另成一篇。
-2. 台股 M3F 的前瞻紀錄：10 月底的訊號沒有記錄到，從 11-30 收盤後（16:00 以後）手動執行 `M3F_FEASIBILITY\forward.py` 開始。
-3. 延伸研究的後續方向和要請教老師的問題，見 `REPORT.md` 最後一節。
