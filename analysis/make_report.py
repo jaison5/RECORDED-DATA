@@ -93,10 +93,11 @@ class SVG:
     def add(self, s):
         self.el.append(s)
 
-    def text(self, x, y, s, size=12, color=INK, anchor="start", weight="normal"):
+    def text(self, x, y, s, size=12, color=INK, anchor="start", weight="normal", halo=False):
         s = str(s).replace("&", "&amp;").replace("<", "&lt;")
+        h = ' stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" paint-order="stroke"' if halo else ""
         self.add(f'<text x="{x:.1f}" y="{y:.1f}" font-size="{size}" fill="{color}" text-anchor="{anchor}" '
-                 f'font-weight="{weight}">{s}</text>')
+                 f'font-weight="{weight}"{h}>{s}</text>')
 
     def line(self, x1, y1, x2, y2, color=AXIS, width=1, dash=None):
         d = f' stroke-dasharray="{dash}"' if dash else ""
@@ -150,12 +151,13 @@ class Panel:
             self.s.line(x, self.y0 + self.h, x, self.y0 + self.h + 4, AXIS)
             self.s.text(x, self.y0 + self.h + 17, lab, 11, INK2, "middle")
 
-    def poly(self, xs, ys, color, width=2, dash=None, tip=None):
+    def poly(self, xs, ys, color, width=2, dash=None, tip=None, opacity=1.0):
         pts = " ".join(f"{self.X(x):.1f},{self.Y(y):.1f}" for x, y in zip(xs, ys) if not np.isnan(y))
         d = f' stroke-dasharray="{dash}"' if dash else ""
+        o = f' stroke-opacity="{opacity}"' if opacity < 1 else ""
         t = f"<title>{tip}</title>" if tip else ""
         self.s.add(f'<polyline points="{pts}" fill="none" stroke="{color}" stroke-width="{width}" '
-                   f'stroke-linejoin="round" stroke-linecap="round"{d}>{t}</polyline>')
+                   f'stroke-linejoin="round" stroke-linecap="round"{d}{o}>{t}</polyline>')
 
 
 def spread(ys, gap):
@@ -204,6 +206,7 @@ def main():
     F.mkdir(exist_ok=True)
     md = [f"# 自動產生的表格（{pd.Timestamp.now():%Y-%m-%d %H:%M}，`analysis/make_report.py`）\n",
           "所有數字都由 `data/` 的紀錄算出；年化用 252 天。觀察期很短，只做描述，不做顯著性推論。\n"]
+    disp = {}  # 給 FIGURES.md 用的表與數字
 
     R = pd.read_csv(D / "daily_returns.csv", index_col=0, parse_dates=True)
     meta = {c: parse_col(c) for c in R.columns}
@@ -229,6 +232,7 @@ def main():
                          "虧損÷QQQ 虧損": P["loss_vs_qqq"].map(lambda v: f"{v:.2f}"),
                          "最大回撤": P["mdd"].map(pct), "最差一天": P["worst"].map(lambda v: pct(v, 2))})
     md += [f"## 1. 績效（{start:%Y-%m-%d}～{end:%Y-%m-%d}，{len(R)} 個交易日）\n", md_table(show), ""]
+    disp["perf"] = show
 
     # ---- 2. 執行差距
     bo = {}
@@ -264,6 +268,7 @@ def main():
                          "同起點": G["same_start"], "同起點：模型": G["model_same"].map(lambda v: pct(v, 2)),
                          "同起點：券商": G["broker_same"].map(lambda v: pct(v, 2)), "同起點差距": G["gap_same"].map(lambda v: pct(v, 2, True)),
                          "每日差距的年化標準差": G["te_daily"].map(pct)})
+    disp["gap"] = show
     md += ["## 2. 執行差距（券商帳戶 − 模型的收盤價複製）\n",
            "「全期」從 10-21 起算，收盤前帳戶 10-21 錯過、10-22 收盤才第一次成交，所以全期差距含了 10-22 那天（QQQ −2.86%）沒有持股。"
            "「同起點」只算第一筆成交之後的交易日，兩邊起點相同。\n",
@@ -305,6 +310,7 @@ def main():
                          排隊中=int(vc.get("accepted", 0) + vc.get("new", 0) + vc.get("pending_new", 0))))
     O = pd.DataFrame(rows)
     O.to_csv(T / "order_status.csv", index=False)
+    disp["orders"] = O
     sig = pd.read_csv(D / "signals.csv", parse_dates=["signal_date", "exec_session"])
     md += ["## 4. 訂單狀態（券商最後狀態）與訊號\n", md_table(O), "",
            f"- 訊號紀錄 `signals.csv`：{sig['signal_date'].nunique()} 個訊號日 × {sig['strategy'].nunique()} 個策略，"
@@ -337,6 +343,7 @@ def main():
     ]
     E = pd.DataFrame(rows)
     E.to_csv(T / "preregistered_expectations.csv", index=False)
+    disp["expect"] = E
     md += ["## 5. 事先登記的預期（`PROTOCOL.md`，2026-10-21 寫好）\n", md_table(E), ""]
 
     # ---- σ̂ 與部位路徑
@@ -354,6 +361,13 @@ def main():
     for s in STRATS:
         out[f"w_{s}"] = sig[sig["strategy"] == s].set_index("signal_date")["target_w"].reindex(path.index).values
     out.to_csv(T / "sigma_and_weights.csv", index=False, float_format="%.6f")
+    # 量子 vs 古典：過去 20 天波動超過 20% 之後
+    hi = out[out["sigma_hist20"] > 0.20]
+    tot = {s: (1 + R[col[(s, "model")]]).prod() - 1 for s in STRATS}
+    disp["qv"] = dict(start=hi["signal_date"].iloc[0] if len(hi) else None, tot=tot, **{
+        f"sig_gap_{k}": (hi["sigma_hist20"] - hi[f"sigma_QVT-{k}"]).mean() for k in ("QLSTM", "QFWP")}, **{
+        f"w_gap_{k}": (hi[f"w_QVT-{k}"] - hi["w_VT-20d"]).mean() for k in ("QLSTM", "QFWP")},
+        w_gap_max=(hi[["w_QVT-QLSTM", "w_QVT-QFWP"]].max(axis=1) - hi["w_VT-20d"]).max())
     md += ["## 附：每天的 σ̂ 與目標部位\n", f"`tables/sigma_and_weights.csv`。VT-20d 用過去 20 天波動重算，和紀錄的部位最大差 {vt_err:.1e}（確認公式正確）。\n"]
 
     fig_cumulative(R, col, F)
@@ -368,16 +382,101 @@ def main():
     fixed_live = wbar * qret + (1 - wbar) * bil.reindex(R.index).fillna(0.0)
     fx = perf(fixed_live)
     e2 = perf(R[col[("E2E-QLSTM", "model")]])
-    live_fixed = dict(wbar=wbar, wmin=we.min(), wmax=we.max(), fixed=fx, e2e=e2)
+    live_fixed = dict(wbar=wbar, wmin=we.min(), wmax=we.max(), fixed=fx, e2e=e2,
+                      series=sig[sig["strategy"] == "E2E-QLSTM"].set_index("exec_session")["target_w"])
 
     # ---- 6、7. 回測對照
     if (btdir / "results" / "d6_weights_QQQ.csv").exists():
-        md += backtest_section(btdir, R, col, T, F, live_fixed)
+        bmd, bx = backtest_section(btdir, R, col, T, F, live_fixed)
+        md += bmd
+        disp.update(bx)
     else:
         md += ["## 6. 回測對照\n", f"找不到 {btdir}，略過。\n"]
 
     (T / "summary_tables.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+    write_figures_md(disp, start, end)
+    export_png(F)
     print("\n".join(md))
+
+
+# ------------------------------------------------------------------ 圖表頁與 PNG
+
+def write_figures_md(disp, start, end):
+    """依講稿順序的圖表頁（RECORDED-DATA/FIGURES.md），給老師在 GitHub 上看。"""
+    a = []
+
+    def fig(name, alt):
+        a.append(f"![{alt}](figures/{name}.svg)\n")
+        a.append(f"[下載 PNG 版](figures/png/{name}.png)\n")
+
+    a.append("# 報告圖表（依講稿順序）\n")
+    a.append(f"資料期間 {start:%Y-%m-%d}～{end:%Y-%m-%d}（紐約收盤），產生於 {pd.Timestamp.now():%Y-%m-%d %H:%M}。"
+             "本頁由 `analysis/make_report.py` 自動產生，數字和 `tables/summary_tables.md` 相同。"
+             "圖是 SVG；如果看不清楚，每張圖下面都有 PNG 版。\n")
+    a.append("1. [執行面驗證](#1-執行面驗證) · 2. [結果](#2-結果) · 3. [和論文的預期對照](#3-和論文的預期對照) · "
+             "4. [量子 vs 古典](#4-量子-vs-古典) · 5. [E2E-QLSTM 的部位](#5-e2e-qlstm-的部位)\n")
+
+    a.append("## 1. 執行面驗證\n")
+    a.append("講稿第 3 段。同一個訊號、三種成交方式。收盤前帳戶 10-21 錯過、10-22 收盤才進場，所以全期看起來比較好；「同起點」欄位是兩邊從同一天開始比。\n")
+    fig("fig3_execution", "三種成交方式的累積報酬")
+    a += [md_table(disp["gap"]), "", "各帳戶的訂單狀態：\n", md_table(disp["orders"]), ""]
+
+    a.append("## 2. 結果\n")
+    a.append("講稿第 4 段。模型版＝收盤價成交、單邊成本 0.05%，和論文回測的算法相同。\n")
+    fig("fig1_cumulative", "累積報酬")
+    a += [md_table(disp["perf"]), ""]
+
+    a.append("## 3. 和論文的預期對照\n")
+    a.append("講稿第 5 段。先看事先登記的 4 個預期，再看本月落在回測同類下跌的哪裡。\n")
+    a += [md_table(disp["expect"]), ""]
+    fig("fig4_backtest_windows", "本月實盤與回測的比較")
+    if "windows" in disp:
+        a.append(f"回測 2008～2026 中，QQQ 在 {disp['L']} 個交易日內跌超過 10% 的視窗有 {disp['n_down']} 個（彼此重疊，約 {disp['episodes']} 段獨立的下跌）：\n")
+        a += [md_table(disp["windows"]), ""]
+
+    a.append("## 4. 量子 vs 古典\n")
+    a.append("講稿第 6 段。\n")
+    fig("fig2_sigma_weight", "預測波動與目標部位")
+    q = disp["qv"]
+    if q["start"] is not None:
+        t = q["tot"]
+        a.append(f"- 從 {q['start']} 起（過去 20 天波動超過 20%）：QLSTM、QFWP 預測的 σ̂ 平均比過去 20 天波動低 "
+                 f"{q['sig_gap_QLSTM'] * 100:.1f}、{q['sig_gap_QFWP'] * 100:.1f} 個百分點；"
+                 f"部位平均比 VT-20d 多 {q['w_gap_QLSTM'] * 100:.1f}、{q['w_gap_QFWP'] * 100:.1f} 個百分點，最多多 {q['w_gap_max'] * 100:.1f} 個百分點。")
+        a.append(f"- 累積報酬（模型版）：VT-20d {pct(t['VT-20d'], 2)}，QVT-QLSTM {pct(t['QVT-QLSTM'], 2)}，QVT-QFWP {pct(t['QVT-QFWP'], 2)}。\n")
+
+    if "years" in disp:
+        a.append("## 5. E2E-QLSTM 的部位\n")
+        a.append("講稿第 7 段。本月和回測都顯示，E2E-QLSTM 大部分時間的部位幾乎固定。\n")
+        fig("fig5_e2e_weight", "回測中 E2E-QLSTM 的部位")
+        a += [x.replace("固定比例的全期數字在第 7 節最後一列。", "固定比例的全期數字在下表最後一列。") for x in disp["fixed_lines"]] + [""]
+        a += ["固定比例對照（全期）：\n", md_table(disp["rep"]), ""]
+        a += ["每年的部位（排除每年頭兩個交易日，那兩天還是前一年模型的部位）：\n", md_table(disp["years"]), ""]
+        if disp.get("train") is not None:
+            a += [disp["train_note"], "", md_table(disp["train"]), ""]
+    (ROOT / "FIGURES.md").write_text("\n".join(a) + "\n", encoding="utf-8")
+
+
+def export_png(F: Path):
+    """用 Edge 無視窗模式把每張 SVG 轉成 2 倍解析度的 PNG（figures/png/）。找不到 Edge 就略過。"""
+    import re
+    import subprocess
+    import tempfile
+    edge = Path(r"C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe")
+    if not edge.exists():
+        print("找不到 Edge，略過 PNG")
+        return
+    out = F / "png"
+    out.mkdir(exist_ok=True)
+    prof = tempfile.mkdtemp(prefix="edge_png_")
+    flags = getattr(subprocess, "CREATE_NO_WINDOW", 0)
+    for svg in sorted(F.glob("*.svg")):
+        w, h = map(int, re.search(r'width="(\d+)" height="(\d+)"', svg.read_text(encoding="utf-8")[:500]).groups())
+        subprocess.run([str(edge), "--headless=new", "--disable-gpu", "--no-first-run", "--hide-scrollbars",
+                        f"--user-data-dir={prof}", "--force-device-scale-factor=2", f"--window-size={w},{h}",
+                        f"--screenshot={out / (svg.stem + '.png')}", svg.resolve().as_uri()],
+                       capture_output=True, timeout=120, creationflags=flags)
+    shutil.rmtree(prof, ignore_errors=True)
 
 
 # ------------------------------------------------------------------ 圖
@@ -535,6 +634,29 @@ def backtest_section(btdir, R, col, T, F, live_fixed):
                        "QQQ 當年報酬": qy.map(pct).values, "E2E 當年報酬": ey.map(pct).values})
     yt.to_csv(T / "e2e_weight_by_year.csv", index=False)
     fixed_md += ["回測中 E2E-QLSTM 每年的部位（每年用前一年以前的資料重新訓練，所以年和年之間會跳）：\n", md_table(yt), ""]
+    extras = dict(years=yt, fixed_lines=fixed_md[1:4], train=None, train_note="")
+
+    # 每年的訓練情況：選中的學習率、早停的 epoch（論文 D6 的 d6_lr_choice.csv）
+    lrp = btdir / "results" / "d6_lr_choice.csv"
+    if lrp.exists():
+        LR = pd.read_csv(lrp)
+        LR = LR[(LR["cap"] == 1) & (LR["model"] == "QLSTM")].sort_values("test_year")
+        lt = pd.DataFrame({"測試年": LR["test_year"].values, "選中的學習率": LR["lr"].map(lambda v: f"{v:g}").values,
+                           "早停選中的 epoch（10 個種子平均）": LR["best_epoch"].map(lambda v: f"{v:.1f}").values,
+                           "實際跑的 epoch": LR["epochs_run"].map(lambda v: f"{v:.1f}").values,
+                           "測試年平均部位": LR["mean_w"].map(pct).values})
+        lt.to_csv(T / "e2e_training_by_year.csv", index=False)
+        lo = LR[LR["lr"] == LR["lr"].min()]
+        hi_ = LR[LR["lr"] > LR["lr"].min()]
+        note = (f"每年的訓練情況（`d6_lr_choice.csv`，只讀）：19 年中有 {len(lo)} 年選中最小的學習率 {LR['lr'].min():g}，"
+                f"其中 {int((lo['best_epoch'] <= 3).sum())} 年早停選在前 3 個 epoch，這些年的部位都在 {pct(lo['mean_w'].min())}～{pct(lo['mean_w'].max())}；"
+                f"選中較大學習率的 {len(hi_)} 年，部位 {pct(hi_['mean_w'].min())}～{pct(hi_['mean_w'].max())}。"
+                f"實盤用的 2026 年模型：學習率 {LR[LR['test_year'] == 2026]['lr'].iloc[0]:g}，"
+                f"早停平均在第 {LR[LR['test_year'] == 2026]['best_epoch'].iloc[0]:.1f} 個 epoch。"
+                "這只是描述；「部位水準接近初始值」是推測，還沒有用未訓練的模型驗證。")
+        fixed_md += [note + "\n", md_table(lt), ""]
+        extras.update(train=lt, train_note=note)
+    fig_e2e_weight(W, live_fixed["series"], F)
 
     # 23 天滾動視窗
     L = len(R)
@@ -559,12 +681,45 @@ def backtest_section(btdir, R, col, T, F, live_fixed):
     Wt = pd.DataFrame(rows)
     Wt.to_csv(T / "backtest_23d_windows.csv", index=False)
     fig_scatter(roll, live, L, F)
+    extras.update(windows=Wt, rep=rep, n_down=len(down), episodes=episodes, L=L)
     return ["## 6. 和論文回測比：歷史上 QQQ 在 " + f"{L} 個交易日內跌超過 10% 的時候\n",
             f"用論文的回測部位（2008-01-02～2026-10-19，`d6_weights_QQQ.csv`）重建每日報酬，取所有 {L} 天的滾動視窗，"
             f"挑出 QQQ 同期跌超過 10% 的 {len(down)} 個視窗（彼此重疊，約 {episodes} 段獨立的下跌）。"
             "百分位越低代表本月比回測的典型情況少虧得越多。\n",
             md_table(Wt), "",
-            "## 7. 論文回測重現檢查（全期，同論文 Table 的 CAGR÷波動）\n", md_table(rep), ""] + fixed_md
+            "## 7. 論文回測重現檢查（全期，同論文 Table 的 CAGR÷波動）\n", md_table(rep), ""] + fixed_md, extras
+
+
+def fig_e2e_weight(W, live_w, F):
+    """回測 2008～2026 的 E2E-QLSTM 部位（每天），VT-20d 淡色對照，最後接上本月實盤。"""
+    # 2008 年頭兩天還沒有 E2E 的決策（用 VT 的部位補），畫圖時略過
+    e, v = W["D6_QLSTM_cap1"].iloc[2:], W["plainVT_cap1"].iloc[2:]
+    t0 = e.index[0]
+    t1 = max(e.index[-1], live_w.index.max()) if len(live_w) else e.index[-1]
+
+    def X(d):
+        return (pd.Timestamp(d) - t0).days
+
+    s = SVG(860, 420)
+    s.text(24, 30, "回測中 E2E-QLSTM 的 QQQ 部位：大部分年份幾乎固定在 47% 左右", 16, INK, weight="bold")
+    s.text(24, 50, "藍線：E2E-QLSTM（每年用前一年以前的資料重新訓練）；淡綠線：VT-20d 對照；黑線：本月實盤", 12, INK2)
+    p = Panel(s, 60, 75, 640, 280, (0, X(t1)), (0, 1.05))
+    p.ygrid([0, 0.25, 0.5, 0.75, 1.0], lambda t: f"{t * 100:.0f}%")
+    yrs = list(range(t0.year, t1.year + 1, 2))
+    p.xlabels([X(f"{y}-01-01") for y in yrs], [str(y) for y in yrs])
+    p.poly([X(d) for d in v.index], v.values, COLOR["VT-20d"], 1, tip="VT-20d", opacity=0.45)
+    p.poly([X(d) for d in e.index], e.values, COLOR["E2E-QLSTM"], 2, tip="E2E-QLSTM")
+    if len(live_w):
+        p.poly([X(d) for d in live_w.index], live_w.values, INK, 3, tip=f"本月實盤 {live_w.mean() * 100:.1f}%")
+    for y, lab, dy in ((2020, "2020 崩盤", -12), (2022, "2022 熊市", 24)):  # 一個標在線上、一個標在線下，避免重疊
+        seg = e.loc[f"{y}-01-05":f"{y}-12-31"]
+        s.text(p.X(X(f"{y}-07-01")), p.Y(seg.mean()) + dy, f"{lab}：{seg.mean() * 100:.0f}%", 11, INK, "middle", "bold", halo=True)
+    items = [("E2E-QLSTM（回測）", e.iloc[-1], COLOR["E2E-QLSTM"]), ("VT-20d（回測）", v.iloc[-1], COLOR["VT-20d"])]
+    if len(live_w):
+        items.append((f"本月實盤 {live_w.mean() * 100:.1f}%", live_w.iloc[-1], INK))
+    end_labels(p, items, X(t1))
+    s.text(24, 405, "資料：論文的逐年 walk-forward 部位（d6_weights_QQQ.csv）與實盤的 ledger/signals.csv", 11, INK2)
+    s.save(F / "fig5_e2e_weight.svg", "回測中 E2E-QLSTM 的部位")
 
 
 def fig_scatter(roll, live, L, F):

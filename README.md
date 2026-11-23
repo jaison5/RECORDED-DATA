@@ -4,6 +4,7 @@
 
 > **狀態更新於 2026-11-23**，資料到紐約時間 2026-11-20 收盤。下面的數字是當天寫的；重跑 `analysis/make_report.py` 之後，`tables/`、`figures/` 會更新，這份 README 的文字不會自動更新。
 
+- **報告用的圖表（依講稿順序）：[`FIGURES.md`](FIGURES.md)**
 - 給老師的報告：[`REPORT.md`](REPORT.md)
 - 延伸研究摘要：[`EXTENSIONS.md`](EXTENSIONS.md)
 - 所有自動產生的表格：[`tables/summary_tables.md`](tables/summary_tables.md)
@@ -91,7 +92,7 @@
 
 ### 也對上了延伸研究的發現
 
-- **量子模型減碼比較慢**：10-30 之後，QLSTM、QFWP 預測的 σ̂ 平均比過去 20 天的實際波動低約 5 個百分點，部位平均高 11 個百分點，最多高 23 個百分點。所以 VT-20d 比兩個量子 QVT 少虧 1.8～2.2 個百分點。這和 `DECISION_VOL` 找到的「log 尺度訓練造成波動低估」一致，也和論文「優勢來自波動度管理，不是量子」的結論一致。
+- **量子模型減碼比較慢**：10-29 之後（過去 20 天波動超過 20% 起），QLSTM、QFWP 預測的 σ̂ 平均比過去 20 天的實際波動低約 5 個百分點，部位平均高 10～11 個百分點，最多高 32 個百分點（QFWP，11-12）。所以 VT-20d 比兩個量子 QVT 少虧 1.8～2.2 個百分點。這和 `DECISION_VOL` 找到的「log 尺度訓練造成波動低估」一致，也和論文「優勢來自波動度管理，不是量子」的結論一致。
 - **E2E-QLSTM 的部位整個月幾乎沒動**，一直在 46.3%～46.9%。同期固定持有 46.6% QQQ、其餘放 BIL 的組合是 −7.07%，E2E 是 −7.09%。也就是說，本月少虧幾乎完全來自「只持有一半」，不是擇時。回測裡 19 年有 15 年，E2E 年內的部位高低差不到 3 個百分點（`tables/e2e_weight_by_year.csv`）。
 
 ![σ̂ 與部位](figures/fig2_sigma_weight.svg)
@@ -108,6 +109,7 @@
 
 ```
 README.md                 本檔：目前狀況
+FIGURES.md                報告用的圖表與表格（依講稿順序，自動產生）
 EXTENSIONS.md             延伸研究摘要
 PROTOCOL.md               事先登記的規則與變更紀錄（雲端 repo 原檔的副本）
 data/                     雲端 repo 的原始紀錄（副本）
@@ -129,8 +131,9 @@ tables/                   由 analysis/make_report.py 算出
   sigma_and_weights.csv   每天的 σ̂ 與部位
   backtest_23d_windows.csv  和回測同類下跌的比較
   e2e_weight_by_year.csv  回測中 E2E-QLSTM 每年的部位
-figures/                  4 張 SVG 圖
-analysis/make_report.py   產生 data/ 副本、tables/、figures/
+  e2e_training_by_year.csv  回測中 E2E-QLSTM 每年選中的學習率與早停 epoch
+figures/                  5 張 SVG 圖；png/ 是同樣的圖（2 倍解析度 PNG）
+analysis/make_report.py   產生 data/ 副本、tables/、figures/、FIGURES.md
 extensions/               延伸研究的完整結果報告（副本）
 ```
 
