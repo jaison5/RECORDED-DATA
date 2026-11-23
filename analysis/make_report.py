@@ -402,14 +402,14 @@ def main():
 # ------------------------------------------------------------------ 圖表頁與 PNG
 
 def write_figures_md(disp, start, end):
-    """依講稿順序的圖表頁（RECORDED-DATA/FIGURES.md），給老師在 GitHub 上看。"""
+    """報告用的圖表頁（RECORDED-DATA/FIGURES.md），在 GitHub 上看。"""
     a = []
 
     def fig(name, alt):
         a.append(f"![{alt}](figures/{name}.svg)\n")
         a.append(f"[下載 PNG 版](figures/png/{name}.png)\n")
 
-    a.append("# 報告圖表（依講稿順序）\n")
+    a.append("# 報告圖表\n")
     a.append(f"資料期間 {start:%Y-%m-%d}～{end:%Y-%m-%d}（紐約收盤），產生於 {pd.Timestamp.now():%Y-%m-%d %H:%M}。"
              "本頁由 `analysis/make_report.py` 自動產生，數字和 `tables/summary_tables.md` 相同。"
              "圖是 SVG；如果看不清楚，每張圖下面都有 PNG 版。\n")
@@ -417,17 +417,17 @@ def write_figures_md(disp, start, end):
              "4. [量子 vs 古典](#4-量子-vs-古典) · 5. [E2E-QLSTM 的部位](#5-e2e-qlstm-的部位)\n")
 
     a.append("## 1. 執行面驗證\n")
-    a.append("講稿第 3 段。同一個訊號、三種成交方式。收盤前帳戶 10-21 錯過、10-22 收盤才進場，所以全期看起來比較好；「同起點」欄位是兩邊從同一天開始比。\n")
+    a.append("同一個訊號、三種成交方式。收盤前帳戶 10-21 錯過、10-22 收盤才進場，所以全期看起來比較好；「同起點」欄位是兩邊從同一天開始比。\n")
     fig("fig3_execution", "三種成交方式的累積報酬")
     a += [md_table(disp["gap"]), "", "各帳戶的訂單狀態：\n", md_table(disp["orders"]), ""]
 
     a.append("## 2. 結果\n")
-    a.append("講稿第 4 段。模型版＝收盤價成交、單邊成本 0.05%，和論文回測的算法相同。\n")
+    a.append("模型版＝收盤價成交、單邊成本 0.05%，和論文回測的算法相同。\n")
     fig("fig1_cumulative", "累積報酬")
     a += [md_table(disp["perf"]), ""]
 
     a.append("## 3. 和論文的預期對照\n")
-    a.append("講稿第 5 段。先看事先登記的 4 個預期，再看本月落在回測同類下跌的哪裡。\n")
+    a.append("先看事先登記的 4 個預期，再看本月落在回測同類下跌的哪裡。\n")
     a += [md_table(disp["expect"]), ""]
     fig("fig4_backtest_windows", "本月實盤與回測的比較")
     if "windows" in disp:
@@ -435,7 +435,7 @@ def write_figures_md(disp, start, end):
         a += [md_table(disp["windows"]), ""]
 
     a.append("## 4. 量子 vs 古典\n")
-    a.append("講稿第 6 段。\n")
+    a.append("量子模型預測的波動 σ̂ 和過去 20 天的實際波動比較，以及因此造成的部位差異。\n")
     fig("fig2_sigma_weight", "預測波動與目標部位")
     q = disp["qv"]
     if q["start"] is not None:
@@ -447,7 +447,7 @@ def write_figures_md(disp, start, end):
 
     if "years" in disp:
         a.append("## 5. E2E-QLSTM 的部位\n")
-        a.append("講稿第 7 段。本月和回測都顯示，E2E-QLSTM 大部分時間的部位幾乎固定。\n")
+        a.append("本月和回測都顯示，E2E-QLSTM 大部分時間的部位幾乎固定。\n")
         fig("fig5_e2e_weight", "回測中 E2E-QLSTM 的部位")
         a += [x.replace("固定比例的全期數字在第 7 節最後一列。", "固定比例的全期數字在下表最後一列。") for x in disp["fixed_lines"]] + [""]
         a += ["固定比例對照（全期）：\n", md_table(disp["rep"]), ""]

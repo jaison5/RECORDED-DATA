@@ -3,13 +3,8 @@
 論文 *Quantum Volatility Forecasting for Volatility-Targeted Trading* 的策略，用 Alpaca 模擬帳戶在真實時間下執行的前瞻測試（forward test）紀錄。
 
 > **狀態更新於 2026-11-23**，資料到紐約時間 2026-11-20 收盤。下面的數字是當天寫的；重跑 `analysis/make_report.py` 之後，`tables/`、`figures/` 會更新，這份 README 的文字不會自動更新。
-<<<<<<< HEAD
 
-- **報告用的圖表（依講稿順序）：[`FIGURES.md`](FIGURES.md)**
-- 給老師的報告：[`REPORT.md`](REPORT.md)
-=======
-\
->>>>>>> 9d95970f018bdf527708a9226a9db6b8d9d0af39
+- **報告圖表：[`FIGURES.md`](FIGURES.md)**
 - 延伸研究摘要：[`EXTENSIONS.md`](EXTENSIONS.md)
 - 所有自動產生的表格：[`tables/summary_tables.md`](tables/summary_tables.md)
 
@@ -113,7 +108,7 @@
 
 ```
 README.md                 本檔：目前狀況
-FIGURES.md                報告用的圖表與表格（依講稿順序，自動產生）
+FIGURES.md                報告用的圖表與表格（自動產生）
 EXTENSIONS.md             延伸研究摘要
 PROTOCOL.md               事先登記的規則與變更紀錄（雲端 repo 原檔的副本）
 data/                     雲端 repo 的原始紀錄（副本）
